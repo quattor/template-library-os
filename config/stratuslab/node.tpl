@@ -24,7 +24,7 @@ unique template config/stratuslab/node;
 
 # XMLRPC
 '/software/packages' = pkg_repl('xmlrpc','2.0.1-3jpp.1','x86_64');
-'/software/packages' = pkg_repl('xmlrpc-c','1.16.24-1206.1840.el5','x86_64');
+'/software/packages' = pkg_repl('xmlrpc-c','1.16.24-1206.1840.4.el5','x86_64');
 
 # Need newer version of Ruby (fix for missing REXML::Formatter)
 '/software/packages' = pkg_repl('ruby', '1.8.6.287-2', 'x86_64');

@@ -13,13 +13,14 @@ include { 'quattor/functions/repository' };
 # first in the list.  If not, then AII installations will fail 
 # because the post-install script will look in the wrong place.
 include { 'repository/config/quattor' };
-variable OS_REPOSITORY_LIST = list('sl560_x86_64',
-                                   'sl560_x86_64_updates',
-                                   'sl560_x86_64_errata',
-                                   'sl5_addons',
-                                   'sl5_epel',
-                                   'java',
-                                   'site',
+variable OS_REPOSITORY_LIST = list(
+    'sl580_x86_64',
+    'sl580_x86_64_updates',
+    'sl580_x86_64_errata',
+    'sl5_addons',
+    'sl5_epel',
+    'java',
+    'site',
 );
 
 '/software/repositories' = add_repositories(OS_REPOSITORY_LIST);

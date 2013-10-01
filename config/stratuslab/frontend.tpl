@@ -5,7 +5,7 @@ unique template config/stratuslab/frontend;
 '/software/packages' = pkg_repl('ruby-mysql','2.7.3-1.el5','x86_64');
 
 # MySQL client is compiled into oned (even if not used directly).
-'/software/packages' = pkg_repl('mysql','5.0.77-4.el5_6.6','x86_64');
+'/software/packages' = pkg_repl('mysql','5.0.95-1.el5_7.1','x86_64');
 
 # Must have mkisofs for creating context images.
 '/software/packages' = pkg_repl('genisoimage','1.1.10-2.fc14','x86_64');

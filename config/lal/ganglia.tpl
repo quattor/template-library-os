@@ -23,8 +23,8 @@ include { 'monitoring/ganglia/config' };
 #  pkg_repl('php-common', '5.1.6-27.el5', 'x86_64');
 #  pkg_repl('rrdtool', '1.3.8-2.el5.rf', 'x86_64');
 #  pkg_repl('perl-rrdtool', '1.3.8-2.el5.rf', 'x86_64');
-#  pkg_repl('ruby','1.8.5-5.el5_4.8','x86_64');
-#  pkg_repl('ruby-libs','1.8.5-5.el5_4.8','x86_64');
+#  pkg_repl('ruby','1.8.5-24.el5','x86_64');
+#  pkg_repl('ruby-libs','1.8.5-24.el5','x86_64');
 #};
 
 

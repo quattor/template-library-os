@@ -68,7 +68,7 @@ include { 'rpms/sql_client' };     # Postgresql client
 
 
 # Add YUM downloadonly extension
-"/software/packages"=pkg_repl("yum-downloadonly","1.1.16-14.el5","noarch");
+"/software/packages"=pkg_repl("yum-downloadonly","1.1.16-21.el5","noarch");
 
 # OS errata and site specific updates
 include { 'config/os/updates' };

@@ -11,7 +11,7 @@ include { 'rpms/sql_client' };
 #include { 'rpms/compat_arch_development' };
 
 # Add pine
-"/software/packages"=pkg_repl('alpine','2.00-2.el5',PKG_ARCH_DEFAULT);
+"/software/packages"=pkg_repl('alpine','2.02-2.el5',PKG_ARCH_DEFAULT);
 
 # Add APT
 #"/software/packages"=pkg_repl("apt","0.5.15cnc6-9.SL",PKG_ARCH_DEFAULT);
@@ -24,7 +24,7 @@ include { 'rpms/sql_client' };
 # Add some RPMs not included in any group but required by gLite MW
 #'/software/packages' = pkg_repl('tk','8.4.13-5.el5_1.1',PKG_ARCH_DEFAULT);
 #'/software/packages' = pkg_repl('sharutils','4.6.1-2',PKG_ARCH_DEFAULT);
-#'/software/packages' = pkg_repl('tkinter','2.4.3-44.el5',PKG_ARCH_DEFAULT);
+#'/software/packages' = pkg_repl('tkinter','2.4.3-46.el5',PKG_ARCH_DEFAULT);
 #'/software/packages' = pkg_repl('tix','8.4.0-11.fc6',PKG_ARCH_DEFAULT);
 #'/software/packages' = pkg_repl('perl-Digest-HMAC','1.01-15','noarch');
 #'/software/packages' = pkg_repl('perl-Digest-SHA1','2.11-1.2.1',PKG_ARCH_DEFAULT);
