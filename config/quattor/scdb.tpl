@@ -1,6 +1,11 @@
 template config/quattor/scdb;
 
-'/software/packages'=pkg_repl('createrepo','0.9.8-5.el6','noarch');
-'/software/packages'=pkg_repl('python-lxml','2.2.3-1.1.el6',PKG_ARCH_DEFAULT);
+'/software/packages'=pkg_repl('createrepo');
+'/software/packages'=pkg_repl('python-lxml');
+
+# Dependencies
+"/software/packages"=pkg_repl("libxml2-python");
+"/software/packages"=pkg_repl("libudev");
+"/software/packages"=pkg_repl("portreserve");
 
 include { 'config/os/updates' };

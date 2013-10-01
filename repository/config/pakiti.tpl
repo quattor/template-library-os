@@ -1,6 +1,6 @@
 #######################################################################
 #
-# Standard repositories to use for Lustre (OS/architecture dependent)
+# Standard repositories to use for Pakiti (OS/architecture dependent)
 #
 #######################################################################
 

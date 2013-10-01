@@ -1,13 +1,14 @@
 unique template config/os/kvm;
 
 '/software/packages'={
-	pkg_repl('qemu-kvm','0.12.1.2-2.295.el6','x86_64');
+	pkg_repl('qemu-kvm','0.12.1.2-2.160.el6','x86_64');
+	pkg_repl('qemu-kvm-tools','0.12.1.2-2.160.el6','x86_64');
 	pkg_repl('celt051','0.5.1.3-0.el6','x86_64');
-	pkg_repl('gpxe-roms-qemu','0.9.7-6.9.el6','noarch');
-	pkg_repl('qemu-img','0.12.1.2-2.295.el6','x86_64');
-	pkg_repl('seabios','0.6.1.2-19.el6','x86_64');
+	pkg_repl('gpxe-roms-qemu','0.9.7-6.7.el6','noarch');
+	pkg_repl('qemu-img','0.12.1.2-2.160.el6','x86_64');
+	pkg_repl('seabios','0.6.1.2-3.el6','x86_64');
 	pkg_repl('sgabios-bin','0-0.3.20110621svn.el6','noarch');
-	pkg_repl('spice-server','0.10.1-10.el6','x86_64');
+	pkg_repl('spice-server','0.8.0-1.el6','x86_64');
 	pkg_repl('vgabios','0.6b-3.6.el6','noarch');
 
 	pkg_repl('virt-manager'       ,'0.8.6-4.el6'  ,'noarch');
@@ -21,7 +22,7 @@ unique template config/os/kvm;
 	pkg_repl('libvirt-python'     ,'0.8.7-18.el6' ,'x86_64');
 	pkg_repl('nc'                 ,'1.84-22.el6'  ,'x86_64');
 	pkg_repl('netcf-libs'         ,'0.1.7-1.el6'  ,'x86_64');
-	pkg_repl('python-virtinst'    ,'0.600.0-8.el6','noarch');
+	pkg_repl('python-virtinst'    ,'0.500.5-3.el6','noarch');
 	pkg_repl('vte'                ,'0.25.1-6.el6' ,'x86_64');
 	pkg_repl('yajl'               ,'1.0.7-3.el6'  ,'x86_64');
 

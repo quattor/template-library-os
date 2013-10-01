@@ -17,7 +17,6 @@ include { 'rpms/misc_sl' };
 # include { 'rpms/openafs_client' };
 include { 'rpms/office_suite' };
 include { 'rpms/internet_applications' };
-# include { 'rpms/spins' };
 # include { 'rpms/additional_devel' };
 # include { 'rpms/afrikaans_support' };
 # include { 'rpms/albanian_support' };

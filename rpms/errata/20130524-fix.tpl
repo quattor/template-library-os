@@ -14,25 +14,25 @@ template rpms/errata/20130524-fix;
 };
 
 '/software/packages'= if ( exists(SELF['abrt']) ) {
-  pkg_repl('abrt-tui',                    '2.0.8-6.el6_3.2','x86_64');
-  pkg_repl('btparser',                    '0.16-3.el6',     'x86_64');
-  pkg_repl('libreport',                   '2.0.9-5.el6_3.2','x86_64');
-  pkg_repl('libreport-cli',               '2.0.9-5.el6_3.2','x86_64');
-  pkg_repl('libreport-plugin-kerneloops', '2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('abrt-tui',                    '2.0.8-15.el6','x86_64');
+  pkg_repl('btparser',                    '0.17-1.el6',     'x86_64');
+  pkg_repl('libreport',                   '2.0.9-15.el6','x86_64');
+  pkg_repl('libreport-cli',               '2.0.9-15.el6','x86_64');
+  pkg_repl('libreport-plugin-kerneloops', '2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
 
 '/software/packages'=if ( exists(SELF[escape('report-gtk')]) ) {
   pkg_del('report-gtk');
-  pkg_repl('libreport-gtk','2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('libreport-gtk','2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
 
 '/software/packages'=if ( exists(SELF[escape('report-newt')]) ) {
   pkg_del('report-newt');
-  pkg_repl('libreport-newt','2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('libreport-newt','2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
@@ -41,14 +41,14 @@ template rpms/errata/20130524-fix;
   pkg_del('abrt-plugin-logger');
   pkg_del('report-config-localsave');
   pkg_del('report-plugin-localsave');
-  pkg_repl('libreport-plugin-logger','2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('libreport-plugin-logger','2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
 
 '/software/packages'=if ( exists(SELF[escape('abrt-plugin-mailx')]) ) {
   pkg_del('abrt-plugin-mailx');
-  pkg_repl('libreport-plugin-mailx','2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('libreport-plugin-mailx','2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
@@ -58,21 +58,21 @@ template rpms/errata/20130524-fix;
   pkg_del('report-config-scp');
   pkg_del('report-plugin-ftp');
   pkg_del('report-plugin-scp');
-  pkg_repl('libreport-plugin-reportuploader','2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('libreport-plugin-reportuploader','2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
 
 '/software/packages'= if ( exists(SELF[escape('abrt-plugin-rhtsupport')]) ) {
   pkg_del('abrt-plugin-rhtsupport');
-  pkg_repl('libreport-plugin-rhtsupport','2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('libreport-plugin-rhtsupport','2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
 
 '/software/packages'= if ( exists(SELF['report']) ) {
   pkg_del('report');
-  pkg_repl('libreport-python','2.0.9-5.el6_3.2','x86_64');
+  pkg_repl('libreport-python','2.0.9-15.el6','x86_64');
 } else {
   SELF;
 };
@@ -93,7 +93,7 @@ template rpms/errata/20130524-fix;
 
 '/software/packages'= if ( exists(SELF[escape('ipa-client')]) ) {
   pkg_repl('python-krbV',       '1.0.90-3.el6','x86_64');
-  pkg_repl('libsss_autofs',     '1.9.2-82.el6','x86_64');
+  pkg_repl('libsss_autofs',     '1.9.2-82.4.el6_4','x86_64');
 } else {
   SELF;
 };
@@ -105,7 +105,7 @@ template rpms/errata/20130524-fix;
 };
 
 '/software/packages' = if ( exists(SELF[escape('libvirt')]) ) { 
-  pkg_repl('numad','0.5-4.20120522git.el6','x86_64');
+  pkg_repl('numad','0.5-8.20121015git.el6','x86_64');
 } else {
   SELF;
 };
@@ -200,59 +200,17 @@ template rpms/errata/20130524-fix;
 
 # openafs kmod name changed
 '/software/packages'= if ( exists(SELF[escape('kmod-openafs')]) ) { 
-    pkg_del('kmod-openafs');
-    pkg_repl('kmod-openafs-358'    ,'1.6.2-0.144.sl6.358.0.1','x86_64');
-    pkg_repl('openafs-module-tools','1.6.2-0.144.sl6'        ,'x86_64');
+  pkg_del('kmod-openafs');
+  pkg_repl('kmod-openafs-358'    ,'1.6.2-0.144.sl6.358.0.1','x86_64');
+  pkg_repl('openafs-module-tools','1.6.2-0.144.sl6'        ,'x86_64');
 } else {
-    SELF;
+  SELF;
 };
 
-'/software/packages'=if (exists(SELF[escape('java-1.7.0-openjdk')]) ) {
-    pkg_repl('xorg-x11-fonts-Type1','7.2-9.1.el6','noarch');
-    pkg_repl('ttmkfdir','3.0.9-32.1.el6','x86_64');
-} else {
-    SELF;
-};
-
-
-# respect local OpenMPI definitions
-'/software/packages' = if (is_defined(MPI_OPENMPI_VERSION_FULL)) {
-    pkg_ronly('openmpi', MPI_OPENMPI_VERSION_FULL, PKG_ARCH_MPI_OPENMPI);
-} else {
-    SELF;
-};
-
-# respect local IBUTILS definitions
-'/software/packages' = if (is_defined(IBUTILS_VERSION)) {
-    pkg_ronly('ibutils', IBUTILS_VERSION, PKG_ARCH_DEFAULT);
-} else {
-    SELF;
-};
-
-# respect local LIBMLX4 definitions
-'/software/packages' = if (is_defined(LIBMLX4_VERSION)) {
-    pkg_ronly('libmlx4', LIBMLX4_VERSION, PKG_ARCH_DEFAULT);
-    pkg_ronly('libmlx4-devel', LIBMLX4_VERSION, PKG_ARCH_DEFAULT);
-} else {
-    SELF;
-};
-
-# respect local OPENSM definitions
-'/software/packages' = if (is_defined(OPENSM_VERSION)) {
-    pkg_ronly('opensm', OPENSM_VERSION, PKG_ARCH_DEFAULT);
-    pkg_ronly('opensm-devel', OPENSM_VERSION, PKG_ARCH_DEFAULT);
-    pkg_ronly('opensm-libs', OPENSM_VERSION, PKG_ARCH_DEFAULT);
-    pkg_ronly('opensm-static', OPENSM_VERSION, PKG_ARCH_DEFAULT);
-} else {
-    SELF;
-};
-
-# respect local LIBIBVERBS definitions
-'/software/packages' = if (is_defined(LIBIBVERBS_VERSION)) {
-    pkg_ronly('libibverbs', LIBIBVERBS_VERSION, PKG_ARCH_DEFAULT);
-    pkg_ronly('libibverbs-devel', LIBIBVERBS_VERSION, PKG_ARCH_DEFAULT);
-    pkg_ronly('libibverbs-utils', LIBIBVERBS_VERSION, PKG_ARCH_DEFAULT);
-    pkg_ronly('libibverbs-devel-static', LIBIBVERBS_VERSION, PKG_ARCH_DEFAULT);
+# remove samba v4 packages if v3 packages are present
+'/software/packages' = if ( exists(SELF[escape('samba-common')]) ) { 
+    pkg_del('samba4-common');
+    pkg_del('samba4-winbind');
 } else {
     SELF;
 };

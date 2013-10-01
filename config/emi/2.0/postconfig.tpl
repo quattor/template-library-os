@@ -37,3 +37,11 @@ include { 'components/symlink/config' };
               )
          );
 
+# Various Quattor supplied dependencies MUST be updated (testing version shere).
+#FIXME when things are official ? Maybe there's already an official package ?
+#"/software/packages"={
+#	pkg_repl("perl-AppConfig"); 
+#	pkg_repl("perl-CAF");
+#	pkg_repl("perl-LC");
+#	pkg_del("perl-AppConfig-caf");
+#	};

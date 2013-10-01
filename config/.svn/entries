@@ -1,70 +1,0 @@
-10
-
-dir
-6204
-http://svn.lal.in2p3.fr/LCG/QWG/templates/trunk/os/sl630-x86_64/config
-http://svn.lal.in2p3.fr/LCG/QWG
-
-
-
-2013-09-11T08:28:49.120806Z
-6201
-philippo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-60caac41-0bef-0310-ae6f-f8fb43407fe4
-
-
-
-
-
-
-
-
-()
-
-quattor
-dir
-
-nagios
-dir
-
-os
-dir
-
-pakiti
-dir
-
-ganglia
-dir
-
-lal
-dir
-
-lemon
-dir
-
-emi
-dir
-
-misc
-dir
-
-lustre
-dir
-
-cvmfs
-dir
-
