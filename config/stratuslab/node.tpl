@@ -24,7 +24,7 @@ unique template config/stratuslab/node;
 
 # XMLRPC
 '/software/packages' = pkg_repl('xmlrpc','2.0.1-3jpp.1','x86_64');
-'/software/packages' = pkg_repl('xmlrpc-c','1.06.18-1.el5.kb','x86_64');
+'/software/packages' = pkg_repl('xmlrpc-c','1.16.24-1206.1840.el5','x86_64');
 
 # Need newer version of Ruby (fix for missing REXML::Formatter)
 '/software/packages' = pkg_repl('ruby', '1.8.6.287-2', 'x86_64');
@@ -44,7 +44,7 @@ unique template config/stratuslab/node;
 '/software/packages' = pkg_repl('jakarta-commons-logging','1.0.4-6jpp.1','x86_64');
 '/software/packages' = pkg_repl('java-1.4.2-gcj-compat','1.4.2.0-40jpp.115','x86_64');
 '/software/packages' = pkg_repl('junit','3.8.2-3jpp.1','x86_64');
-'/software/packages' = pkg_repl('tomcat5-servlet-2.4-api','5.5.23-0jpp.7.el5_3.2','x86_64');
+'/software/packages' = pkg_repl('tomcat5-servlet-2.4-api','5.5.23-0jpp.17.el5_6','x86_64');
 
 # Updated version of sqlite
 '/software/packages' = pkg_repl('sqlite','3.7.0-1','x86_64');

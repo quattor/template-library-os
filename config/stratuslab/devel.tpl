@@ -20,7 +20,7 @@
 unique template config/stratuslab/devel;
 
 # XMLRPC
-'/software/packages' = pkg_repl('xmlrpc-c-devel','1.06.18-1.el5.kb','x86_64');
+'/software/packages' = pkg_repl('xmlrpc-c-devel','1.16.24-1206.1840.el5','x86_64');
 
 # Need newer version of Ruby (fix for missing REXML::Formatter)
 '/software/packages' = pkg_repl('ruby-devel', '1.8.6.287-2', 'x86_64');
@@ -33,7 +33,7 @@ unique template config/stratuslab/devel;
 '/software/packages' = pkg_repl('jakarta-commons-logging','1.0.4-6jpp.1','x86_64');
 '/software/packages' = pkg_repl('java-1.4.2-gcj-compat','1.4.2.0-40jpp.115','x86_64');
 '/software/packages' = pkg_repl('junit','3.8.2-3jpp.1','x86_64');
-'/software/packages' = pkg_repl('tomcat5-servlet-2.4-api','5.5.23-0jpp.7.el5_3.2','x86_64');
+'/software/packages' = pkg_repl('tomcat5-servlet-2.4-api','5.5.23-0jpp.17.el5_6','x86_64');
 
 # Updated version of sqlite
 '/software/packages' = pkg_repl('sqlite-devel','3.7.0-1','x86_64');
@@ -43,13 +43,13 @@ unique template config/stratuslab/devel;
 
 # Various development libraries needed for the build.
 '/software/packages' = pkg_repl('curl-devel','7.15.5-9.el5','x86_64');
-'/software/packages' = pkg_repl('libxml2-devel','2.6.26-2.1.2.8','x86_64');
-'/software/packages' = pkg_repl('openssl-devel','0.9.8e-12.el5_4.6','x86_64');
+'/software/packages' = pkg_repl('libxml2-devel','2.6.26-2.1.2.8.el5_5.1','x86_64');
+'/software/packages' = pkg_repl('openssl-devel','0.9.8e-12.el5_5.7','x86_64');
 '/software/packages' = pkg_repl('libidn-devel','0.6.5-1.1','x86_64');
-'/software/packages' = pkg_repl('krb5-devel','1.6.1-36.el5_5.2','x86_64');
-'/software/packages' = pkg_repl('e2fsprogs-devel','1.39-23.el5','x86_64');
+'/software/packages' = pkg_repl('krb5-devel','1.6.1-55.el5_6.1','x86_64');
+'/software/packages' = pkg_repl('e2fsprogs-devel','1.39-23.el5_5.1','x86_64');
 '/software/packages' = pkg_repl('keyutils-libs-devel','1.2-1.el5','x86_64');
-'/software/packages' = pkg_repl('libselinux-devel','1.33.4-5.5.el5','x86_64');
+'/software/packages' = pkg_repl('libselinux-devel','1.33.4-5.7.el5','x86_64');
 '/software/packages' = pkg_repl('libsepol-devel','1.15.2-3.el5','x86_64');
 
 include { 'config/os/updates' };

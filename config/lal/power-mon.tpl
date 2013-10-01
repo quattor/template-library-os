@@ -12,5 +12,5 @@ unique template config/lal/power-mon;
 "/software/packages"=pkg_repl("matplotlib","0.99.3-1",PKG_ARCH_DEFAULT);
 "/software/packages"=pkg_repl("numpy","1.4.1-1",PKG_ARCH_DEFAULT);
 
-'/software/packages'=pkg_repl('python-devel','2.4.3-27.el5','x86_64');
+'/software/packages'=pkg_repl('python-devel','2.4.3-44.el5','x86_64');
 include { 'config/os/updates' };
