@@ -1,7 +1,7 @@
 template rpms/errata/20120919-fix;
 
 '/software/packages'= if (exists(SELF['cups'])) {
-    pkg_repl('poppler-utils','0.5.4-4.4.el5_5.14','x86_64');
+    pkg_repl('poppler-utils','0.5.4-19.el5','x86_64');
 } else {
     SELF;
 };
@@ -27,7 +27,7 @@ template rpms/errata/20120919-fix;
     pkg_repl('alsa-lib-devel','1.0.17-1.el5','x86_64');
     pkg_repl('freetype-devel','2.2.1-31.el5_8.1','x86_64');
     pkg_repl('gnome-vfs2-devel','2.16.2-8.el5','x86_64');
-    pkg_repl('gtk2-devel','2.10.4-21.el5_5.6','x86_64');
+    pkg_repl('gtk2-devel','2.10.4-21.el5_7.7','x86_64');
     pkg_repl('libIDL-devel','0.8.7-1.fc6','x86_64');
     pkg_repl('libXrender-devel','0.9.1-3.1','x86_64');
     pkg_repl('libXt-devel','1.0.2-3.2.el5','x86_64');
@@ -44,14 +44,14 @@ template rpms/errata/20120919-fix;
     pkg_repl('cairo-devel','1.2.4-5.el5','x86_64');
     pkg_repl('libXi-devel','1.0.1-4.el5_4','x86_64');
     pkg_repl('libXinerama-devel','1.0.1-2.1','x86_64');
-    pkg_repl('libX11-devel','1.0.3-11.el5','x86_64');
-    pkg_repl('libXcursor-devel','1.1.7-1.1','x86_64');
+    pkg_repl('libX11-devel','1.0.3-11.el5_7.1','x86_64');
+    pkg_repl('libXcursor-devel','1.1.7-1.2','x86_64');
     pkg_repl('libXext-devel','1.0.1-2.1','x86_64');
     pkg_repl('libXfixes-devel','4.0.1-2.1','x86_64');
     pkg_repl('libXrandr-devel','1.1.1-3.3','x86_64');
     pkg_repl('libSM-devel','1.0.1-3.1','x86_64');
     pkg_repl('ORBit2-devel','2.14.3-5.el5','x86_64');
-    pkg_repl('esound-devel','0.2.36-3','x86_64');
+    pkg_repl('esound-devel','0.2.36-4','x86_64');
     pkg_repl('libbonobo-devel','2.16.0-1.1.el5_5.1','x86_64');
     pkg_repl('gnome-keyring-devel','0.6.0-1.fc6','x86_64');
     pkg_repl('libICE-devel','1.0.1-2.1','x86_64');
@@ -66,7 +66,7 @@ template rpms/errata/20120919-fix;
     pkg_repl('xorg-x11-proto-devel','7.1-13.el5','x86_64');
     pkg_repl('libXau-devel','1.0.1-3.1','x86_64');
     pkg_repl('libXdmcp-devel','1.0.1-2.1','x86_64');
-    pkg_repl('mesa-libGL-devel','6.5.1-7.8.el5','x86_64');
+    pkg_repl('mesa-libGL-devel','6.5.1-7.10.el5','x86_64');
 } else {
     SELF;
 };
@@ -117,3 +117,40 @@ template rpms/errata/20120919-fix;
 } else {
     SELF;
 };
+
+'/software/packages'= {
+	conflicts=list('','-cli','-common','-devel','-pdo','-mysql','-ldap','-odbc','-pgsql');
+	
+	if (exists(SELF[escape('php53-common')])) {
+		_release=unescape(key(SELF[escape('php53-common')],0));
+	    _arch=key(SELF[escape('php53-common')][escape(_release)]['arch'],0);
+		foreach(k;v;conflicts) {
+			_deprecated='php'+v;
+			_newname='php53'+v;
+			if (exists(SELF[escape(_deprecated)])) {
+			    pkg_del(_deprecated);
+			    pkg_repl(_newname,_release,_arch);
+			}; 
+		};
+	};
+	SELF;
+};
+
+'/software/packages'= if (exists(SELF[escape('tcsh617')])) {
+    pkg_del('tcsh');
+} else {
+    SELF;
+};
+
+'/software/packages'= if (exists(SELF[escape('samba3x-common')])) {
+    pkg_del('samba-client');
+    pkg_del('samba-common');
+} else {
+    SELF;
+};
+
+# c-ares OS base version is newer than gLite-3.2
+'/software/packages' = pkg_ronly('c-ares', '1.6.0-5.el5', 'i386');
+'/software/packages' = pkg_ronly('c-ares', '1.6.0-5.el5', 'x86_64');
+'/software/packages' = pkg_ronly('c-ares-devel', '1.6.0-5.el5', 'i386');
+'/software/packages' = pkg_ronly('c-ares-devel', '1.6.0-5.el5', 'x86_64');

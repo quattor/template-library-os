@@ -23,6 +23,6 @@ unique template config/os/mail/amavis-new;
 '/software/packages'=pkg_repl('unarj','2.63-0.a.2.el5.rf','x86_64');
 '/software/packages'=pkg_repl('unrar','3.7.4-1.el5.rf','x86_64');
 '/software/packages'=pkg_repl('zoo','2.10-2.2.el5.rf','x86_64');
-'/software/packages'=pkg_repl('mysql-server','5.0.77-4.el5_6.6','x86_64');
+'/software/packages'=pkg_repl('mysql-server','5.0.95-1.el5_7.1','x86_64');
 
 include { 'config/os/updates' };

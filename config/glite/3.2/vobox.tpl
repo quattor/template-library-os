@@ -1,6 +1,6 @@
 unique template config/glite/3.2/vobox;
 
-"/software/packages"=pkg_repl("boost","1.33.1-10.el5",PKG_ARCH_GLITE);
+"/software/packages"=pkg_repl("boost","1.33.1-15.el5",PKG_ARCH_GLITE);
 "/software/packages"=pkg_repl("guile","1.8.0-8.20060831cvs",PKG_ARCH_GLITE);
 "/software/packages"=pkg_repl("gv","3.6.2-2.sl5",PKG_ARCH_DEFAULT);
 #"/software/packages"=pkg_repl("ggv","2.8.0-1",PKG_ARCH_DEFAULT);

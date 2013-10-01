@@ -1,5 +1,5 @@
 unique template config/os/vsftpd;
 
-"/software/packages"=pkg_repl("vsftpd","2.0.5-16.el5_6.1","x86_64");
+"/software/packages"=pkg_repl("vsftpd","2.0.5-24.el5","x86_64");
 
 include { 'config/os/updates' };

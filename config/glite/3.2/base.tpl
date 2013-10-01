@@ -62,11 +62,11 @@ include { 'rpms/x_software_development' };
 '/software/packages'=pkg_repl('perl-XML-NamespaceSupport','1.10-1.el5.rf','noarch');
 '/software/packages' = pkg_repl('perl-TimeDate','1.16-5.el5','noarch');
 
-'/software/packages'=pkg_repl('boost','1.33.1-10.el5',PKG_ARCH_GLITE);
+'/software/packages'=pkg_repl('boost','1.33.1-15.el5',PKG_ARCH_GLITE);
 '/software/packages'=pkg_repl('expat','1.95.8-8.3.el5_5.3',"i386");
-'/software/packages'=pkg_repl('libstdc++','4.1.2-50.el5',"i386");
+'/software/packages'=pkg_repl('libstdc++','4.1.2-52.el5',"i386");
 '/software/packages'=pkg_repl('expat','1.95.8-8.3.el5_5.3',PKG_ARCH_GLITE);
-'/software/packages'=pkg_repl('libstdc++','4.1.2-50.el5',PKG_ARCH_GLITE);
+'/software/packages'=pkg_repl('libstdc++','4.1.2-52.el5',PKG_ARCH_GLITE);
 # Dependency for perl-MIME-Lite
 '/software/packages' = pkg_repl('perl-MailTools', '1.77-2.el5', 'noarch');
 '/software/packages'=pkg_repl('perl-TimeDate','1.16-5.el5','noarch');
@@ -75,7 +75,7 @@ include { 'rpms/x_software_development' };
 '/software/packages' = pkg_repl('perl-Digest-SHA1','2.11-1.2.1',PKG_ARCH_DEFAULT);
 
 '/software/packages' = pkg_repl('tk','8.4.13-5.el5_1.1',PKG_ARCH_DEFAULT);
-'/software/packages' = pkg_repl('tkinter','2.4.3-44.el5', PKG_ARCH_DEFAULT);
+'/software/packages' = pkg_repl('tkinter','2.4.3-46.el5', PKG_ARCH_DEFAULT);
 '/software/packages' = pkg_repl('sharutils','4.6.1-2',PKG_ARCH_DEFAULT);
 '/software/packages' = pkg_repl('tix','8.4.0-11.fc6',PKG_ARCH_DEFAULT);
 "/software/packages" = pkg_repl("words", "3.0-9.1", "noarch");
@@ -86,22 +86,22 @@ include { 'rpms/x_software_development' };
 
 '/software/packages' = pkg_repl('gnu-crypto-sasl-jdk1.4','2.1.0-2jpp.1',PKG_ARCH_DEFAULT);
 
-'/software/packages' = pkg_repl('krb5-libs','1.6.1-55.el5_6.1','i386');
+'/software/packages' = pkg_repl('krb5-libs','1.6.1-70.el5','i386');
 
-'/software/packages'=pkg_repl('libgcj','4.1.2-50.el5',PKG_ARCH_DEFAULT);
-'/software/packages'=pkg_repl('libgcj-devel','4.1.2-50.el5',PKG_ARCH_DEFAULT);
+'/software/packages'=pkg_repl('libgcj','4.1.2-52.el5',PKG_ARCH_DEFAULT);
+'/software/packages'=pkg_repl('libgcj-devel','4.1.2-52.el5',PKG_ARCH_DEFAULT);
 
-'/software/packages'=pkg_repl('zlib','1.2.3-3','i386');
+'/software/packages'=pkg_repl('zlib','1.2.3-4.el5','i386');
 '/software/packages'=pkg_repl('openssl','0.9.8e-12.el5_5.7','i686');
 
 '/software/packages' = pkg_repl('tk','8.4.13-5.el5_1.1','i386');
 '/software/packages' = pkg_repl('tix','8.4.0-11.fc6','i386');
 '/software/packages' = pkg_repl('tcl','8.4.13-4.el5','i386');
 
-'/software/packages' = pkg_repl('e2fsprogs-libs','1.39-23.el5_5.1','i386');
-'/software/packages' = pkg_repl('libX11','1.0.3-11.el5','i386');
-'/software/packages' = pkg_repl('libX11-devel','1.0.3-11.el5','i386');
-'/software/packages' = pkg_repl('device-mapper','1.02.55-2.el5','i386');
+'/software/packages' = pkg_repl('e2fsprogs-libs','1.39-33.el5','i386');
+'/software/packages' = pkg_repl('libX11','1.0.3-11.el5_7.1','i386');
+'/software/packages' = pkg_repl('libX11-devel','1.0.3-11.el5_7.1','i386');
+'/software/packages' = pkg_repl('device-mapper','1.02.67-2.el5','i386');
 '/software/packages' = pkg_repl('keyutils-libs','1.2-1.el5','i386');
 '/software/packages' = pkg_repl('libselinux','1.33.4-5.7.el5','i386');
 '/software/packages' = pkg_repl('libXau','1.0.1-3.1','i386');
@@ -126,7 +126,7 @@ include { 'rpms/x_software_development' };
 "/software/packages" = pkg_repl("compat-libstdc++-33", "3.2.3-61", "i386");
 
 # Add YUM downloadonly extension
-"/software/packages"=pkg_repl("yum-downloadonly","1.1.16-14.el5","noarch");
+"/software/packages"=pkg_repl("yum-downloadonly","1.1.16-21.el5","noarch");
 
 # OS errata and site specific updates
 include { 'config/os/updates' };
