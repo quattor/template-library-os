@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/LCG/QWG/!svn/ver/6153/templates/trunk/os/sl630-x86_64/repository/config
+END
+os.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/6153/templates/trunk/os/sl630-x86_64/repository/config/os.tpl
+END
+pakiti.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/repository/config/pakiti.tpl
+END
+lemon.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/repository/config/lemon.tpl
+END
+lustre.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/repository/config/lustre.tpl
+END
+nagios.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/repository/config/nagios.tpl
+END

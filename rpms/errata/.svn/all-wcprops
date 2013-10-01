@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/LCG/QWG/!svn/ver/6197/templates/trunk/os/sl630-x86_64/rpms/errata
+END
+20120612-fix.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/errata/20120612-fix.tpl
+END
+20130117-fix.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/6047/templates/trunk/os/sl630-x86_64/rpms/errata/20130117-fix.tpl
+END
+20130329.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/6150/templates/trunk/os/sl630-x86_64/rpms/errata/20130329.tpl
+END
+20130730-fix.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/6197/templates/trunk/os/sl630-x86_64/rpms/errata/20130730-fix.tpl
+END
+20130524-fix.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/6180/templates/trunk/os/sl630-x86_64/rpms/errata/20130524-fix.tpl
+END
+20120919.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/errata/20120919.tpl
+END
+20130329-fix.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/6150/templates/trunk/os/sl630-x86_64/rpms/errata/20130329-fix.tpl
+END
+20120919-fix.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/errata/20120919-fix.tpl
+END
+20120612.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/errata/20120612.tpl
+END
+20130117.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/6047/templates/trunk/os/sl630-x86_64/rpms/errata/20130117.tpl
+END
+20130730.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/6197/templates/trunk/os/sl630-x86_64/rpms/errata/20130730.tpl
+END
+20130524.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/6180/templates/trunk/os/sl630-x86_64/rpms/errata/20130524.tpl
+END

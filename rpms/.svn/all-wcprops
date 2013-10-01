@@ -1,0 +1,1373 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/LCG/QWG/!svn/ver/6197/templates/trunk/os/sl630-x86_64/rpms
+END
+southern_ndebele_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/southern_ndebele_support.tpl
+END
+thai_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/thai_support.tpl
+END
+print_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/print_server.tpl
+END
+ha_management.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/ha_management.tpl
+END
+conflicts.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/conflicts.tpl
+END
+java_platform.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/java_platform.tpl
+END
+norwegian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/norwegian_support.tpl
+END
+additional_devel.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/additional_devel.tpl
+END
+php.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/php.tpl
+END
+ha.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/ha.tpl
+END
+core.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/core.tpl
+END
+sanskrit_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/sanskrit_support.tpl
+END
+zulu_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/zulu_support.tpl
+END
+inuktitut_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/inuktitut_support.tpl
+END
+desktop_platform_devel.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/desktop_platform_devel.tpl
+END
+swahili_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/swahili_support.tpl
+END
+maithili_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/maithili_support.tpl
+END
+fijian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/fijian_support.tpl
+END
+assamese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/assamese_support.tpl
+END
+tamil_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tamil_support.tpl
+END
+backup_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/backup_client.tpl
+END
+dutch_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/dutch_support.tpl
+END
+web_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/web_server.tpl
+END
+virtualization_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/virtualization_tools.tpl
+END
+low_saxon_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/low_saxon_support.tpl
+END
+filipino_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/filipino_support.tpl
+END
+general_desktop.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/general_desktop.tpl
+END
+lao_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/lao_support.tpl
+END
+icelandic_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/icelandic_support.tpl
+END
+hebrew_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/hebrew_support.tpl
+END
+cifs_file_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/cifs_file_server.tpl
+END
+engineering_and_scientific.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/engineering_and_scientific.tpl
+END
+welsh_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/welsh_support.tpl
+END
+serbian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/serbian_support.tpl
+END
+scientific.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/scientific.tpl
+END
+web_servlet.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/web_servlet.tpl
+END
+graphical_admin_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/graphical_admin_tools.tpl
+END
+development.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/6149/templates/trunk/os/sl630-x86_64/rpms/development.tpl
+END
+armenian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/armenian_support.tpl
+END
+hindi_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/hindi_support.tpl
+END
+czech_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/czech_support.tpl
+END
+repos.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/repos.tpl
+END
+luxembourgish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/luxembourgish_support.tpl
+END
+server_platform_devel.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/server_platform_devel.tpl
+END
+finnish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/finnish_support.tpl
+END
+storage_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/storage_server.tpl
+END
+internet_browser.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/internet_browser.tpl
+END
+backup_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/backup_server.tpl
+END
+esperanto_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/esperanto_support.tpl
+END
+ethiopic_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/ethiopic_support.tpl
+END
+tex.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tex.tpl
+END
+kashubian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/kashubian_support.tpl
+END
+albanian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/albanian_support.tpl
+END
+base_x.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/base_x.tpl
+END
+development_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/6149/templates/trunk/os/sl630-x86_64/rpms/development_tools.tpl
+END
+kurdish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/kurdish_support.tpl
+END
+german_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/german_support.tpl
+END
+mail_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/mail_server.tpl
+END
+irish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/irish_support.tpl
+END
+base.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/base.tpl
+END
+sinhala_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/sinhala_support.tpl
+END
+occitan_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/occitan_support.tpl
+END
+desktop_platform.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/desktop_platform.tpl
+END
+italian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/italian_support.tpl
+END
+ftp_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/ftp_server.tpl
+END
+network_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/network_server.tpl
+END
+smart_card.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/smart_card.tpl
+END
+client_mgmt_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/client_mgmt_tools.tpl
+END
+resilient_storage.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/resilient_storage.tpl
+END
+virtualization_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/virtualization_client.tpl
+END
+breton_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/breton_support.tpl
+END
+georgian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/georgian_support.tpl
+END
+security_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/security_tools.tpl
+END
+tsonga_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tsonga_support.tpl
+END
+emacs.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/emacs.tpl
+END
+printing.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/printing.tpl
+END
+network_file_system_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/network_file_system_client.tpl
+END
+vietnamese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/vietnamese_support.tpl
+END
+persian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/persian_support.tpl
+END
+technical_writing.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/technical_writing.tpl
+END
+burmese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/burmese_support.tpl
+END
+storage_client_fcoe.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/storage_client_fcoe.tpl
+END
+tajik_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tajik_support.tpl
+END
+manx_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/manx_support.tpl
+END
+xfs.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/xfs.tpl
+END
+bulgarian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/bulgarian_support.tpl
+END
+spanish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/spanish_support.tpl
+END
+directory_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/directory_client.tpl
+END
+mysql_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/mysql_client.tpl
+END
+latin_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/latin_support.tpl
+END
+galician_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/galician_support.tpl
+END
+network_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/network_tools.tpl
+END
+sindhi_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/sindhi_support.tpl
+END
+urdu_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/urdu_support.tpl
+END
+amazigh_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/amazigh_support.tpl
+END
+buildsys_build.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/buildsys_build.tpl
+END
+ukrainian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/ukrainian_support.tpl
+END
+errata.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/errata.tpl
+END
+compat_libraries.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/compat_libraries.tpl
+END
+marathi_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/marathi_support.tpl
+END
+japanese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/japanese_support.tpl
+END
+input_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/input_methods.tpl
+END
+default.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/default.tpl
+END
+desktop_debugging.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/desktop_debugging.tpl
+END
+frisian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/frisian_support.tpl
+END
+kannada_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/kannada_support.tpl
+END
+malayalam_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/malayalam_support.tpl
+END
+latvian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/latvian_support.tpl
+END
+directory_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/directory_server.tpl
+END
+polish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/polish_support.tpl
+END
+system_management_wbem.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/system_management_wbem.tpl
+END
+legacy_x.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/legacy_x.tpl
+END
+slovak_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/slovak_support.tpl
+END
+text_internet.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/text_internet.tpl
+END
+croatian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/croatian_support.tpl
+END
+internet_applications.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/internet_applications.tpl
+END
+portuguese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/portuguese_support.tpl
+END
+graphics.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/graphics.tpl
+END
+performance.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/performance.tpl
+END
+swedish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/swedish_support.tpl
+END
+kinyarwanda_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/kinyarwanda_support.tpl
+END
+perl_runtime.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/perl_runtime.tpl
+END
+updates.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/updates.tpl
+END
+northern_sotho_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/northern_sotho_support.tpl
+END
+tagalog_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tagalog_support.tpl
+END
+identity_management_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/identity_management_server.tpl
+END
+system_management_messaging_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/system_management_messaging_client.tpl
+END
+system_admin_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/system_admin_tools.tpl
+END
+basque_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/basque_support.tpl
+END
+system_management_snmp.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/system_management_snmp.tpl
+END
+xhosa_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/xhosa_support.tpl
+END
+oriya_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/oriya_support.tpl
+END
+gaelic_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/gaelic_support.tpl
+END
+faroese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/faroese_support.tpl
+END
+system_management.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/system_management.tpl
+END
+indonesian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/indonesian_support.tpl
+END
+eclipse.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/eclipse.tpl
+END
+punjabi_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/punjabi_support.tpl
+END
+virtualization.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/virtualization.tpl
+END
+fonts.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/fonts.tpl
+END
+openafs_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/openafs_client.tpl
+END
+storage_client_multipath.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/storage_client_multipath.tpl
+END
+debugging.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/debugging.tpl
+END
+scalable_file_systems.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/scalable_file_systems.tpl
+END
+bengali_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/bengali_support.tpl
+END
+british_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/british_support.tpl
+END
+danish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/danish_support.tpl
+END
+system_management_messaging_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/system_management_messaging_server.tpl
+END
+system_tools.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/system_tools.tpl
+END
+brazilian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/brazilian_support.tpl
+END
+console_internet.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/console_internet.tpl
+END
+basic_desktop.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/basic_desktop.tpl
+END
+bhutanese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/bhutanese_support.tpl
+END
+server_platform.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/server_platform.tpl
+END
+dial_up.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/dial_up.tpl
+END
+identity_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/identity_server.tpl
+END
+belarusian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/belarusian_support.tpl
+END
+x_software_development.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/6149/templates/trunk/os/sl630-x86_64/rpms/x_software_development.tpl
+END
+turkish_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/turkish_support.tpl
+END
+maltese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/maltese_support.tpl
+END
+lithuanian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/lithuanian_support.tpl
+END
+ice_desktop.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/ice_desktop.tpl
+END
+venda_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/venda_support.tpl
+END
+slovenian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/slovenian_support.tpl
+END
+afrikaans_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/afrikaans_support.tpl
+END
+french_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/french_support.tpl
+END
+postgresql_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/postgresql_client.tpl
+END
+khmer_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/khmer_support.tpl
+END
+hardware_monitoring.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/hardware_monitoring.tpl
+END
+gujarati_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/gujarati_support.tpl
+END
+maori_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/maori_support.tpl
+END
+kashmiri_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/kashmiri_support.tpl
+END
+nepali_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/nepali_support.tpl
+END
+upper_sorbian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/upper_sorbian_support.tpl
+END
+mysql.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/mysql.tpl
+END
+legacy_unix.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/legacy_unix.tpl
+END
+walloon_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/walloon_support.tpl
+END
+x11.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/x11.tpl
+END
+chinese_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/chinese_support.tpl
+END
+korean_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/korean_support.tpl
+END
+uzbek_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/uzbek_support.tpl
+END
+coptic_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/coptic_support.tpl
+END
+arabic_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/arabic_support.tpl
+END
+chhattisgarhi_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/chhattisgarhi_support.tpl
+END
+dialup.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/dialup.tpl
+END
+southern_sotho_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/southern_sotho_support.tpl
+END
+somali_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/somali_support.tpl
+END
+tibetan_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tibetan_support.tpl
+END
+swati_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/swati_support.tpl
+END
+ruby_runtime.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/ruby_runtime.tpl
+END
+virtualization_platform.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/virtualization_platform.tpl
+END
+misc_sl.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/misc_sl.tpl
+END
+kde_desktop.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/kde_desktop.tpl
+END
+hiligaynon_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/hiligaynon_support.tpl
+END
+malay_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/malay_support.tpl
+END
+romanian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/romanian_support.tpl
+END
+postgresql.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/postgresql.tpl
+END
+friulian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/friulian_support.tpl
+END
+remote_desktop_clients.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/remote_desktop_clients.tpl
+END
+chichewa_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/chichewa_support.tpl
+END
+hungarian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/hungarian_support.tpl
+END
+azerbaijani_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/azerbaijani_support.tpl
+END
+nfs_file_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/nfs_file_server.tpl
+END
+estonian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/estonian_support.tpl
+END
+interlingua_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/interlingua_support.tpl
+END
+mongolian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/mongolian_support.tpl
+END
+mainframe_access.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/mainframe_access.tpl
+END
+russian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/russian_support.tpl
+END
+large_systems.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/large_systems.tpl
+END
+turkmen_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/turkmen_support.tpl
+END
+konkani_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/konkani_support.tpl
+END
+greek_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/greek_support.tpl
+END
+tswana_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tswana_support.tpl
+END
+malagasy_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/malagasy_support.tpl
+END
+macedonian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/macedonian_support.tpl
+END
+print_client.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/print_client.tpl
+END
+tetum_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/tetum_support.tpl
+END
+spins.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/spins.tpl
+END
+storage_client_iscsi.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/storage_client_iscsi.tpl
+END
+catalan_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/catalan_support.tpl
+END
+infiniband.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/infiniband.tpl
+END
+telugu_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/telugu_support.tpl
+END
+office_suite.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/office_suite.tpl
+END
+sardinian_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/sardinian_support.tpl
+END
+kazakh_support.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/kazakh_support.tpl
+END
+load_balancer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/load_balancer.tpl
+END
+editors.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/LCG/QWG/!svn/ver/6151/templates/trunk/os/sl630-x86_64/rpms/editors.tpl
+END
+turbogears.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/rpms/turbogears.tpl
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/LCG/QWG/!svn/ver/6201/templates/trunk/os/sl630-x86_64/config/emi/2.0
+END
+apel.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/apel.tpl
+END
+torque_server.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/torque_server.tpl
+END
+wn-sl4-compat.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/LCG/QWG/!svn/ver/6201/templates/trunk/os/sl630-x86_64/config/emi/2.0/wn-sl4-compat.tpl
+END
+bdii.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/bdii.tpl
+END
+glexec-wn.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/glexec-wn.tpl
+END
+base.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/base.tpl
+END
+postconfig.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/postconfig.tpl
+END
+dpmlfc-common.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/dpmlfc-common.tpl
+END
+ui.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/LCG/QWG/!svn/ver/6157/templates/trunk/os/sl630-x86_64/config/emi/2.0/ui.tpl
+END

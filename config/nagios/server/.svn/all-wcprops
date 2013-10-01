@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/config/nagios/server
+END
+config.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/LCG/QWG/!svn/ver/5949/templates/trunk/os/sl630-x86_64/config/nagios/server/config.tpl
+END
