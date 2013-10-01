@@ -2,10 +2,10 @@
 
 template config/os/svn_client-1.6;
 
-variable SUBVERSION_PKG_VERSION = '1.6.11-2.el6_0.3';
-variable APR_VERSION ?= '1.3.9-3.el6';
+variable SUBVERSION_PKG_VERSION = '1.6.11-7.el6';
+variable APR_VERSION ?= '1.3.9-5.el6_2';
 variable APR_UTIL_VERSION ?= '1.3.9-3.el6_0.1';
-variable NEON_VERSION ?= '0.29.3-1.2.el6';
+variable NEON_VERSION ?= '0.29.3-2.el6';
 variable SQLITE_VERSION ?= '3.6.20-1.el6';
 #variable PYSVN_VERSION ?= '';
 
@@ -16,13 +16,13 @@ variable SQLITE_VERSION ?= '3.6.20-1.el6';
 "/software/packages"=pkg_repl("apr-devel",APR_VERSION,PKG_ARCH_DEFAULT);
 "/software/packages"=pkg_repl("apr-util-devel",APR_UTIL_VERSION,PKG_ARCH_DEFAULT);
 
-"/software/packages"=pkg_repl('db4-devel','4.7.25-16.el6','x86_64');
-"/software/packages"=pkg_repl('expat-devel','2.0.1-9.1.el6','x86_64');
-"/software/packages"=pkg_repl('openldap-devel','2.4.23-20.el6','x86_64');
-"/software/packages"=pkg_repl('gnutls-devel','2.8.5-4.el6','x86_64');
+"/software/packages"=pkg_repl('db4-devel','4.7.25-17.el6','x86_64');
+"/software/packages"=pkg_repl('expat-devel','2.0.1-11.el6_2','x86_64');
+"/software/packages"=pkg_repl('openldap-devel','2.4.23-26.el6','x86_64');
+"/software/packages"=pkg_repl('gnutls-devel','2.8.5-4.el6_2.2','x86_64');
 
-"/software/packages"=pkg_repl('db4-cxx','4.7.25-16.el6','x86_64');
-"/software/packages"=pkg_repl('libgcrypt-devel','1.4.5-9.el6','x86_64');
+"/software/packages"=pkg_repl('db4-cxx','4.7.25-17.el6','x86_64');
+"/software/packages"=pkg_repl('libgcrypt-devel','1.4.5-9.el6_2.2','x86_64');
 "/software/packages"=pkg_repl('libgpg-error-devel','1.7-4.el6','x86_64');
 "/software/packages"=pkg_repl('cyrus-sasl-devel','2.1.23-13.el6','x86_64');
 "/software/packages"=pkg_repl("pakchois","0.4-3.2.el6","x86_64");

@@ -8,8 +8,8 @@ unique template config/ganglia/frontend;
   pkg_repl('php-common', '5.3.3-3.el6', 'x86_64');
   pkg_repl('rrdtool', '1.3.8-6.el6', 'x86_64');
   pkg_repl('rrdtool-perl', '1.3.8-6.el6', 'x86_64');
-  pkg_repl('ruby','1.8.7.352-3.el6','x86_64');
-  pkg_repl('ruby-libs','1.8.7.352-3.el6','x86_64');
+  pkg_repl('ruby','1.8.7.352-7.el6_2','x86_64');
+  pkg_repl('ruby-libs','1.8.7.352-7.el6_2','x86_64');
 };
 
 include { 'config/os/updates' };

@@ -6,5 +6,5 @@
 unique template rpms/luxembourgish_support;
 
 
-"/software/packages"=pkg_repl("autocorr-lb","3.2.1-19.6.el6_0.5","noarch");
+"/software/packages"=pkg_repl("autocorr-lb","3.4.5.2-16.el6","noarch");
 

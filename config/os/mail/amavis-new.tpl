@@ -7,7 +7,7 @@ unique template config/os/mail/amavis-new;
 '/software/packages'=pkg_repl('lha','1.14i-19.2.2.el5.rf','x86_64');
 '/software/packages'=pkg_repl('lzop','1.02-0.9.rc1.el6','x86_64');
 '/software/packages'=pkg_repl('lzo','2.03-3.1.el6','x86_64');
-'/software/packages'=pkg_repl('ncompress','4.2.4-54.el6','x86_64');
+'/software/packages'=pkg_repl('ncompress','4.2.4-54.el6_2.1','x86_64');
 '/software/packages'=pkg_repl('nomarch','1.4-1.el5.rf','x86_64');
 '/software/packages'=pkg_repl('perl-BerkeleyDB','0.33-1.el5.rf','x86_64');
 '/software/packages'=pkg_repl('perl-Convert-TNEF','0.17-3.2.el5.rf','noarch');
@@ -23,6 +23,6 @@ unique template config/os/mail/amavis-new;
 '/software/packages'=pkg_repl('unarj','2.63-0.a.2.el5.rf','x86_64');
 '/software/packages'=pkg_repl('unrar','3.7.4-1.el5.rf','x86_64');
 '/software/packages'=pkg_repl('zoo','2.10-2.2.el5.rf','x86_64');
-'/software/packages'=pkg_repl('mysql-server','5.1.52-1.el6_0.1','x86_64');
+'/software/packages'=pkg_repl('mysql-server','5.1.61-4.el6','x86_64');
 
 include { 'config/os/updates' };

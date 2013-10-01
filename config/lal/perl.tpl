@@ -16,6 +16,6 @@ unique template config/lal/perl;
 '/software/packages'=pkg_del('perl-DBD-MySQL');
 '/software/packages'=pkg_repl('perl-DBD-MySQL','0-0.fake','noarch');
 
-'/software/packages'=pkg_repl('mysql','5.1.52-1.el6_0.1','x86_64');
+'/software/packages'=pkg_repl('mysql','5.1.61-4.el6','x86_64');
 
 include { 'config/os/updates' };

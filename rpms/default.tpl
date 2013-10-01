@@ -91,7 +91,7 @@ include { 'rpms/hardware_monitoring' };
 # include { 'rpms/hindi_support' };
 # include { 'rpms/hungarian_support' };
 # include { 'rpms/icelandic_support' };
-# include { 'rpms/identity_server' };
+# include { 'rpms/identity_management_server' };
 # include { 'rpms/indonesian_support' };
 # include { 'rpms/infiniband' };
 include { 'rpms/input_methods' };

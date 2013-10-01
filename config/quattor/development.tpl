@@ -1,6 +1,6 @@
 unique template config/quattor/development;
 
-variable PERL_BUILD_NUMBER ?= '-119.el6_1.1';
+variable PERL_BUILD_NUMBER ?= '-127.el6';
 
 '/software/packages' = pkg_repl('perl-Test-Harness','3.17'+PERL_BUILD_NUMBER,'x86_64');
 '/software/packages' = pkg_repl('perl-Test-Simple','0.92'+PERL_BUILD_NUMBER,'x86_64');

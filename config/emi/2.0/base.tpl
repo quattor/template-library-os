@@ -101,8 +101,8 @@ include {'rpms/system_admin_tools'};#some RPMS were previously in base_x
 
 
 
-'/software/packages'=pkg_repl('libgcj','4.4.6-3.el6',PKG_ARCH_DEFAULT);
-'/software/packages'=pkg_repl('libgcj-devel','4.4.6-3.el6',PKG_ARCH_DEFAULT);
+'/software/packages'=pkg_repl('libgcj','4.4.6-4.el6',PKG_ARCH_DEFAULT);
+'/software/packages'=pkg_repl('libgcj-devel','4.4.6-4.el6',PKG_ARCH_DEFAULT);
 
 
 #tk deps
@@ -125,7 +125,7 @@ include {'rpms/system_admin_tools'};#some RPMS were previously in base_x
 # gcc/g++ SL3 i686 compatibility
 
 # Add YUM downloadonly extension
-"/software/packages"=pkg_repl("yum-plugin-downloadonly","1.1.30-10.el6","noarch");
+"/software/packages"=pkg_repl("yum-plugin-downloadonly","1.1.30-14.el6","noarch");
 
 # OS errata and site specific updates
 include { 'config/os/updates' };
