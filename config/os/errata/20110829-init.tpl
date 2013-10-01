@@ -1,11 +1,10 @@
-unique template config/os/errata/20110428-init;
+unique template config/os/errata/20110829-init;
 
 variable OS_KERNEL_VERSION_ERRATA ?= nlist(
-  'sl550', '2.6.18-238.1.1.el5',
+    'sl560', '2.6.18-238.19.1.el5',
 );
 
 # Because JAVA is updated, define a new DEFAULT version to be configured
-variable JAVA_JDK_DEFAULT_VERSION ?= '1.6.0_24';
+variable JAVA_JDK_DEFAULT_VERSION ?= '1.6.0_26';
 
 variable AFS_VERSION ?= '1.4.14-80.sl5';
-
