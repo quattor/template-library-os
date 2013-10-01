@@ -20,7 +20,7 @@ variable PYSVN_VERSION ?= '1.7.0-0';
 #"/software/packages"=pkg_repl("subversion-ruby",SUBVERSION_PKG_VERSION,PKG_ARCH_DEFAULT);
 
 # Add PySVN (Python SVN API)
-"/software/packages"=pkg_repl("py24_pysvn_svn142",PYSVN_VERSION,"x86_64");
+"/software/packages"=pkg_repl("py24_pysvn_svn142",PYSVN_VERSION,"i386");
 
 # Re include RPM updates
 include { 'config/os/updates' };

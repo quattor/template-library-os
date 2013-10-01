@@ -2,7 +2,8 @@
 
 unique template config/os/java;
 
-variable JAVA_JDK_DEFAULT_VERSION ?= "1.6.0_20";
+variable JAVA_JDK_DEFAULT_VERSION ?= "1.6.0_26";
+variable JAVA_SUN_COMPAT_RELEASE ?= "3";
 variable JAVA_JPP_UTILS_VERSION ?= '1.7.3-1jpp.2.el5';
 
 # java-sun-compat is required for JPP support. Avoid to change its version under normal circumstances.
@@ -13,10 +14,10 @@ variable JAVA_SUN_COMPAT_VERSION ?= {
   debug('JAVA_JDK_DEFAULT_VERSION='+JAVA_JDK_DEFAULT_VERSION+', Java arch='+PKG_ARCH_JAVA+', jdk_version_tok='+to_string(jdk_version_toks));
   if ( length(jdk_version_toks) == 0 ) {    # No match
     SELF['jdk'] = JAVA_JDK_DEFAULT_VERSION;
-    SELF['compat'] = JAVA_JDK_DEFAULT_VERSION+'-1jpp';
+    SELF['compat'] = JAVA_JDK_DEFAULT_VERSION+'-'+JAVA_SUN_COMPAT_RELEASE+'jpp';
   } else {
     SELF['jdk'] = jdk_version_toks[1];
-    SELF['compat'] = jdk_version_toks[1]+'.'+jdk_version_toks[2]+'-1.sl5.jpp';
+    SELF['compat'] = jdk_version_toks[1]+'.'+jdk_version_toks[2]+'-'+JAVA_SUN_COMPAT_RELEASE+'.sl5.jpp';
   };
   SELF;
 };

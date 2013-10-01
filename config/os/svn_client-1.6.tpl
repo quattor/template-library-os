@@ -34,7 +34,7 @@ include { 'config/os/updates' };
 "/software/packages"=pkg_repl("sqlite-devel",SQLITE_VERSION,PKG_ARCH_DEFAULT);
 
 # Add PySVN (Python SVN API)
-"/software/packages"=pkg_repl("py24_pysvn_svn165","1.7.0-0","x86_64");
+"/software/packages"=pkg_repl("py24_pysvn_svn165","1.7.0-0","i386");
 
 # Add SVN client.
 # Ensure this is done after applying the OS updates.

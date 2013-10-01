@@ -1,7 +1,9 @@
 unique template config/os/errata/20120612-init;
 
+variable PKG_ARCH_DEFAULT ?= 'i386';
+variable PKG_ARCH_KERNEL ?= 'i686';
 variable OS_KERNEL_VERSION_ERRATA ?= nlist(
-    'sl560', '2.6.18-308.4.1.el5',
+    'sl570', '2.6.18-308.8.1.el5',
 );
 
 # Because JAVA is updated, define a new DEFAULT version to be configured
