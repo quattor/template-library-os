@@ -39,7 +39,7 @@ template rpms/errata/20130730-fix;
     pkg_repl('startup-notification-devel','0.8-4.1','x86_64');
     pkg_repl('GConf2-devel','2.14.0-9.el5','x86_64');
     pkg_repl('dbus-glib-devel','0.73-11.el5_9','x86_64');
-    pkg_repl('hal-devel','0.5.8.1-62.el5','x86_64');
+    pkg_repl('hal-devel','0.5.8.1-64.el5','x86_64');
     pkg_repl('atk-devel','1.12.2-1.fc6','x86_64');
     pkg_repl('cairo-devel','1.2.4-5.el5','x86_64');
     pkg_repl('libXi-devel','1.0.1-4.el5_4','x86_64');
@@ -73,7 +73,7 @@ template rpms/errata/20130730-fix;
 
 # il faut ajouter le python-lib
 '/software/packages' = if (exists(SELF[escape('python')])) {
-    pkg_repl('python-libs','2.4.3-46.el5_8.2','x86_64');
+    pkg_repl('python-libs','2.4.3-56.el5','x86_64');
 } else {
     SELF;
 };
@@ -113,7 +113,7 @@ template rpms/errata/20130730-fix;
 '/software/packages' = pkg_ronly('kernel-module-openafs-'+KERNEL_VERSION_NUM+KERNEL_VARIANT, AFS_VERSION, PKG_ARCH_KERNEL);
 
 '/software/packages'= if (exists(SELF[escape('xen-libs')])) {
-    pkg_repl("e4fsprogs-libs","1.41.12-2.el5","x86_64");
+    pkg_repl("e4fsprogs-libs","1.41.12-3.el5","x86_64");
 } else {
     SELF;
 };
@@ -128,8 +128,8 @@ template rpms/errata/20130730-fix;
 			_deprecated='php'+v;
 			_newname='php53'+v;
 			if (exists(SELF[escape(_deprecated)])) {
-			    pkg_del(_deprecated);
-			    pkg_repl(_newname,_release,_arch);
+                           pkg_del(_deprecated);
+                           pkg_repl(_newname,_release,_arch);
 			}; 
 		};
 	};
