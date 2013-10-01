@@ -1,29 +1,30 @@
 template rpms/errata/20111117-fix;
 
-'/software/packages' = if(exists(SELF['cups'])) {
+'/software/packages'= if (exists(SELF['cups'])) {
     pkg_repl('poppler-utils','0.5.4-4.4.el5_5.14','x86_64');
 } else {
     SELF;
 };
 
-'/software/packages' = if (exists(SELF[escape('samba-common')]) || exists(SELF[escape('kdebase')])) {
-    pkg_repl('libsmbclient','3.0.33-3.29.el5_7.4','x86_64');
+'/software/packages'= if (exists(SELF[escape('samba-common')]) || exists(SELF[escape('kdebase')])) {
+#    pkg_repl('libsmbclient','3.0.33-3.29.el5_7.4','x86_64');
+  pkg_repl('libsmbclient','3.0.33-3.29.el5_7.4','x86_64');
 } else {
     SELF;
 };
 
-'/software/packages' = if (exists(SELF[escape('tzdata')])) {
+'/software/packages'= if (exists(SELF[escape('tzdata')])) {
     pkg_del('tzdata');
     pkg_repl('tzdata','2011l-4.el5','x86_64');
 } else {
     SELF;
 };
 
-'/software/packages' = if (exists(SELF[escape('xulrunner-devel')])) {
+'/software/packages'= if (exists(SELF[escape('xulrunner-devel')])) {
     pkg_repl('alsa-lib-devel','1.0.17-1.el5','x86_64');
     pkg_repl('freetype-devel','2.2.1-28.el5_7.1','x86_64');
-    pkg_repl('gnome-vfs2-devel','2.16.2-6.el5','x86_64');
-    pkg_repl('gtk2-devel','2.10.4-20.el5','x86_64');
+    pkg_repl('gnome-vfs2-devel','2.16.2-8.el5','x86_64');
+    pkg_repl('gtk2-devel','2.10.4-21.el5_5.6','x86_64');
     pkg_repl('libIDL-devel','0.8.7-1.fc6','x86_64');
     pkg_repl('libXrender-devel','0.9.1-3.1','x86_64');
     pkg_repl('libXt-devel','1.0.2-3.2.el5','x86_64');
@@ -35,7 +36,7 @@ template rpms/errata/20111117-fix;
     pkg_repl('startup-notification-devel','0.8-4.1','x86_64');
     pkg_repl('GConf2-devel','2.14.0-9.el5','x86_64');
     pkg_repl('dbus-glib-devel','0.73-10.el5_5','x86_64');
-    pkg_repl('hal-devel','0.5.8.1-59.el5','x86_64');
+    pkg_repl('hal-devel','0.5.8.1-62.el5','x86_64');
     pkg_repl('atk-devel','1.12.2-1.fc6','x86_64');
     pkg_repl('cairo-devel','1.2.4-5.el5','x86_64');
     pkg_repl('libXi-devel','1.0.1-4.el5_4','x86_64');
@@ -48,7 +49,7 @@ template rpms/errata/20111117-fix;
     pkg_repl('libSM-devel','1.0.1-3.1','x86_64');
     pkg_repl('ORBit2-devel','2.14.3-5.el5','x86_64');
     pkg_repl('esound-devel','0.2.36-3','x86_64');
-    pkg_repl('libbonobo-devel','2.16.0-1.fc6','x86_64');
+    pkg_repl('libbonobo-devel','2.16.0-1.1.el5_5.1','x86_64');
     pkg_repl('gnome-keyring-devel','0.6.0-1.fc6','x86_64');
     pkg_repl('libICE-devel','1.0.1-2.1','x86_64');
     pkg_repl('libart_lgpl-devel','2.3.17-4','x86_64');
@@ -69,7 +70,8 @@ template rpms/errata/20111117-fix;
 
 # il faut ajouter le python-lib
 '/software/packages' = if (exists(SELF[escape('python')])) {
-    pkg_repl('python-libs','2.4.3-44.el5','x86_64');
+#    pkg_repl('python-libs','2.4.3-44.el5','x86_64');
+     pkg_repl('python-libs','2.4.3-44.el5','x86_64');
 } else {
     SELF;
 };
@@ -78,7 +80,13 @@ template rpms/errata/20111117-fix;
     pkg_ronly('gsl','1.13-3.el5','x86_64');
     pkg_ronly('gsl','1.13-3.el5','i386');
 } else {        
-SELF;
+    SELF;
+};
+
+'/software/packages' = if (exists(SELF['systemtap'])) {
+    pkg_repl('kernel-devel',KERNEL_VERSION_NUM,'x86_64');
+} else {
+    SELF;
 };
 
 '/software/packages' = if ( exists(SELF['libvirt']) ) {
@@ -89,15 +97,16 @@ SELF;
     SELF;
 };
 
-'/software/packages'= if (exists(SELF[escape('kernel-module-openafs')])) {
-    pkg_del('kernel-module-openafs');
-    pkg_ronly('kernel-module-openafs-'+KERNEL_VERSION_NUM+KERNEL_VARIANT,AFS_VERSION,PKG_ARCH_KERNEL);
+'/software/packages' = if (exists(SELF[escape('kernel-module-openafs')])) {
+    pkg_del('kernel-module-openafs','2.6.18-238.1.1.el5-1.4.12-79.sl5','x86_64');
 } else {
     SELF;
 }; 
 
+'/software/packages' = pkg_ronly('kernel-module-openafs-'+KERNEL_VERSION_NUM+KERNEL_VARIANT, AFS_VERSION, PKG_ARCH_KERNEL);
+
 '/software/packages'= if (exists(SELF[escape('xen-libs')])) {
-    pkg_repl("e4fsprogs-libs","1.41.9-3.el5","x86_64");
+    pkg_repl("e4fsprogs-libs","1.41.12-2.el5","x86_64");
 } else {
     SELF;
 };

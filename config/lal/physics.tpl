@@ -22,12 +22,12 @@ include { 'rpms/sql_client' };
 
 #
 # Add some RPMs not included in any group but required by gLite MW
-#'/software/packages' = pkg_repl('tk','8.4.7-2',PKG_ARCH_DEFAULT);
-#'/software/packages' = pkg_repl('sharutils','4.2.1-22.2',PKG_ARCH_DEFAULT);
-#'/software/packages' = pkg_repl('tkinter','2.3.4-14.4',PKG_ARCH_DEFAULT);
-#'/software/packages' = pkg_repl('tix','8.1.4-98',PKG_ARCH_DEFAULT);
-#'/software/packages' = pkg_repl('perl-Digest-HMAC','1.01-13','noarch');
-#'/software/packages' = pkg_repl('perl-Digest-SHA1','2.07-5',PKG_ARCH_DEFAULT);
+#'/software/packages' = pkg_repl('tk','8.4.13-5.el5_1.1',PKG_ARCH_DEFAULT);
+#'/software/packages' = pkg_repl('sharutils','4.6.1-2',PKG_ARCH_DEFAULT);
+#'/software/packages' = pkg_repl('tkinter','2.4.3-44.el5',PKG_ARCH_DEFAULT);
+#'/software/packages' = pkg_repl('tix','8.4.0-11.fc6',PKG_ARCH_DEFAULT);
+#'/software/packages' = pkg_repl('perl-Digest-HMAC','1.01-15','noarch');
+#'/software/packages' = pkg_repl('perl-Digest-SHA1','2.11-1.2.1',PKG_ARCH_DEFAULT);
 
 # Add XEmacs
 include { 'config/os/xemacs' };

@@ -24,6 +24,6 @@ unique template config/lal/perl;
 
 '/software/packages'=pkg_repl('perl-Net-OpenSSH','0.36-1.el5.rf','noarch');
 
-'/software/packages'=pkg_repl('mysql','5.0.77-3.el5','x86_64');
+'/software/packages'=pkg_repl('mysql','5.0.77-4.el5_6.6','x86_64');
 
 include { 'config/os/updates' };
