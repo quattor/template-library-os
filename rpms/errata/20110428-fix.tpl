@@ -14,11 +14,9 @@ template rpms/errata/20110428-fix;
 # other ones
 '/software/packages'=pkg_del('seamonkey-nss');
 '/software/packages'=pkg_repl('nss','3.12.8-1.el4','i386');
-'/software/packages'=pkg_repl('nss','3.12.8-1.el4','x86_64');
 '/software/packages'=pkg_del('seamonkey-nspr');
 '/software/packages'=pkg_repl('nspr','4.8.6-1.el4','i386');
-'/software/packages'=pkg_repl('nspr','4.8.6-1.el4','x86_64');
-'/software/packages'=pkg_repl('libsmi','0.4.5-5.el4','x86_64');
+'/software/packages'=pkg_repl('libsmi','0.4.5-5.el4','i386');
 
 # Required by firefox
 '/software/packages'=pkg_repl('evolution28-atk','1.12.2-4.el4',PKG_ARCH_DEFAULT); 

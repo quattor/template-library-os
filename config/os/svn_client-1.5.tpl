@@ -25,13 +25,10 @@ include { 'config/os/updates' };
 # For apr, ensure both architectures and all other related RPMs have the same version to avoid conflicts.
 "/software/packages"=pkg_repl("apr","0.9.13-1",'i386');
 "/software/packages"=pkg_repl("apr-util","0.9.13-1",'i386');
-"/software/packages"=pkg_repl("apr","0.9.13-1",PKG_ARCH_DEFAULT);
-"/software/packages"=pkg_repl("apr-util","0.9.13-1",PKG_ARCH_DEFAULT);
 "/software/packages"=pkg_repl("neon","0.27.2-1",PKG_ARCH_SVN);
 '/software/packages'=pkg_ronly('apr-devel','0.9.13-1','i386');
-'/software/packages'=pkg_ronly('apr-devel','0.9.13-1',PKG_ARCH_DEFAULT);
 '/software/packages'=pkg_ronly('apr-util-devel','0.9.13-1','i386');
-'/software/packages'=pkg_ronly('apr-util-devel','0.9.13-1',PKG_ARCH_DEFAULT);
+
 
 # Add PySVN (Python SVN API)
 #"/software/packages"=pkg_repl("py24_pysvn_svn165","1.7.0-0",PKG_ARCH_SVN);

@@ -7,5 +7,5 @@ unique template rpms/ftp_server;
 
 include { 'rpms/base' };
 
-"/software/packages"=pkg_repl("vsftpd","2.0.1-6.el4","x86_64");
+"/software/packages"=pkg_repl("vsftpd","2.0.1-6.el4","i386");
 

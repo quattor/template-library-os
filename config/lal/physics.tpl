@@ -7,9 +7,6 @@ include { 'rpms/engineering_and_scientific' };	# GNUplot
 include { 'rpms/mysql_client' };
 include { 'rpms/sql_client' };
 
-# Include some RPM's for -m32 compatibility (ME)
-include { 'rpms/compat_arch_development' };
-
 # Add pine
 "/software/packages"=pkg_repl("pine","4.64-1.SL",PKG_ARCH_DEFAULT);
 
@@ -22,9 +19,9 @@ include { 'rpms/compat_arch_development' };
 
 #
 # Add some RPMs not included in any group but required by gLite MW
-'/software/packages' = pkg_repl('tk','8.4.7-3.el4_6.1',PKG_ARCH_DEFAULT);
+'/software/packages' = pkg_repl('tk','8.4.7-2',PKG_ARCH_DEFAULT);
 '/software/packages' = pkg_repl('sharutils','4.2.1-22.2',PKG_ARCH_DEFAULT);
-'/software/packages' = pkg_repl('tkinter','2.3.4-14.4.el4_6.1',PKG_ARCH_DEFAULT);
+'/software/packages' = pkg_repl('tkinter','2.3.4-14.4',PKG_ARCH_DEFAULT);
 '/software/packages' = pkg_repl('tix','8.1.4-98',PKG_ARCH_DEFAULT);
 #'/software/packages' = pkg_repl('perl-Digest-HMAC','1.01-13','noarch');
 #'/software/packages' = pkg_repl('perl-Digest-SHA1','2.07-5',PKG_ARCH_DEFAULT);

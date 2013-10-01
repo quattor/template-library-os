@@ -2,7 +2,7 @@
 template config/os/updates;
 
 # Configure variables used to control errata deployment
-include { if_exists(OS_ERRATA_INIT) };
+include { OS_ERRATA_INIT };
 
 # Include OS  errata.
 # If defined it must exist.

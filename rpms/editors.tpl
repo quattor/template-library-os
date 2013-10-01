@@ -7,10 +7,10 @@ unique template rpms/editors;
 
 include { 'rpms/base' };
 
-"/software/packages"=pkg_repl("joe","3.1-7.rhel4","x86_64");
-"/software/packages"=pkg_repl("nedit","5.4-3","x86_64");
-"/software/packages"=pkg_repl("openmotif","2.2.3-10.2.el4","x86_64");
-"/software/packages"=pkg_repl("vim-common","6.3.046-0.40E.7","x86_64");
-"/software/packages"=pkg_repl("vim-enhanced","6.3.046-0.40E.7","x86_64");
-"/software/packages"=pkg_repl("xorg-x11-deprecated-libs","6.8.2-1.EL.52","x86_64");
+"/software/packages"=pkg_repl("joe","3.1-7.rhel4","i386");
+"/software/packages"=pkg_repl("nedit","5.4-3","i386");
+"/software/packages"=pkg_repl("openmotif","2.2.3-10.2.el4","i386");
+"/software/packages"=pkg_repl("vim-common","6.3.046-0.40E.7","i386");
+"/software/packages"=pkg_repl("vim-enhanced","6.3.046-0.40E.7","i386");
+"/software/packages"=pkg_repl("xorg-x11-deprecated-libs","6.8.2-1.EL.52","i386");
 

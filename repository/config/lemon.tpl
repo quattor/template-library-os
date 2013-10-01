@@ -15,6 +15,6 @@ include { 'pan/functions' };
 # then they will not be "resolved" and SPMA will not function
 # correctly. 
  
-"/software/repositories" = push(create("repository/lemon_sl_x86_64"));
+"/software/repositories" = push(create("repository/lemon_sl_i386"));
 
 

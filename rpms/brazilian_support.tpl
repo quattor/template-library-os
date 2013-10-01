@@ -7,6 +7,6 @@ unique template rpms/brazilian_support;
 
 include { 'rpms/portuguese_support' };
 
-"/software/packages"=pkg_repl("aspell-pt","0.50-8","x86_64");
+"/software/packages"=pkg_repl("aspell-pt","0.50-8","i386");
 "/software/packages"=pkg_repl("kde-i18n-Brazil","3.3.1-2.1","noarch");
 

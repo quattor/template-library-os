@@ -7,18 +7,18 @@ unique template rpms/arabic_support;
 
 
 "/software/packages"=pkg_repl("basesystem","8.0-4","noarch");
-"/software/packages"=pkg_repl("bash","3.0-19.7","x86_64");
-"/software/packages"=pkg_repl("expat","1.95.7-4","x86_64");
-"/software/packages"=pkg_repl("filesystem","2.3.0-1","x86_64");
-"/software/packages"=pkg_repl("fontconfig","2.2.3-13.el4","x86_64");
+"/software/packages"=pkg_repl("bash","3.0-19.7","i386");
+"/software/packages"=pkg_repl("expat","1.95.7-4","i386");
+"/software/packages"=pkg_repl("filesystem","2.3.0-1","i386");
+"/software/packages"=pkg_repl("fontconfig","2.2.3-13.el4","i386");
 "/software/packages"=pkg_repl("fonts-arabic","1.5-3","noarch");
-"/software/packages"=pkg_repl("freetype","2.1.9-8.el4.6","x86_64");
+"/software/packages"=pkg_repl("freetype","2.1.9-8.el4.6","i386");
 "/software/packages"=pkg_repl("glibc","2.3.4-2.41",PKG_ARCH_GLIBC);
-"/software/packages"=pkg_repl("glibc-common","2.3.4-2.41","x86_64");
-"/software/packages"=pkg_repl("libgcc","3.4.6-10","x86_64");
-"/software/packages"=pkg_repl("libtermcap","2.0.8-39","x86_64");
-"/software/packages"=pkg_repl("mktemp","1.5-20","x86_64");
+"/software/packages"=pkg_repl("glibc-common","2.3.4-2.41","i386");
+"/software/packages"=pkg_repl("libgcc","3.4.6-10","i386");
+"/software/packages"=pkg_repl("libtermcap","2.0.8-39","i386");
+"/software/packages"=pkg_repl("mktemp","1.5-20","i386");
 "/software/packages"=pkg_repl("setup","2.5.37-1.7","noarch");
 "/software/packages"=pkg_repl("tzdata","2008e-1.el4","noarch");
-"/software/packages"=pkg_repl("zlib","1.2.1.2-1.2","x86_64");
+"/software/packages"=pkg_repl("zlib","1.2.1.2-1.2","i386");
 

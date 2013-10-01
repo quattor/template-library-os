@@ -7,15 +7,15 @@ unique template rpms/smb_server;
 
 include { 'rpms/base' };
 
-"/software/packages"=pkg_repl("atk","1.8.0-2","x86_64");
-"/software/packages"=pkg_repl("gamin","0.1.7-1.4.EL4","x86_64");
-"/software/packages"=pkg_repl("gtk2","2.4.13-24.el4","x86_64");
-"/software/packages"=pkg_repl("libglade2","2.4.0-5","x86_64");
-"/software/packages"=pkg_repl("pango","1.6.0-9","x86_64");
-"/software/packages"=pkg_repl("pygtk2","2.4.0-2.el4","x86_64");
-"/software/packages"=pkg_repl("pygtk2-libglade","2.4.0-2.el4","x86_64");
-"/software/packages"=pkg_repl("samba","3.0.28-0.el4.9","x86_64");
-"/software/packages"=pkg_repl("samba-client","3.0.28-0.el4.9","x86_64");
-"/software/packages"=pkg_repl("samba-common","3.0.28-0.el4.9","x86_64");
+"/software/packages"=pkg_repl("atk","1.8.0-2","i386");
+"/software/packages"=pkg_repl("gamin","0.1.7-1.4.EL4","i386");
+"/software/packages"=pkg_repl("gtk2","2.4.13-24.el4","i386");
+"/software/packages"=pkg_repl("libglade2","2.4.0-5","i386");
+"/software/packages"=pkg_repl("pango","1.6.0-9","i386");
+"/software/packages"=pkg_repl("pygtk2","2.4.0-2.el4","i386");
+"/software/packages"=pkg_repl("pygtk2-libglade","2.4.0-2.el4","i386");
+"/software/packages"=pkg_repl("samba","3.0.28-0.el4.9","i386");
+"/software/packages"=pkg_repl("samba-client","3.0.28-0.el4.9","i386");
+"/software/packages"=pkg_repl("samba-common","3.0.28-0.el4.9","i386");
 "/software/packages"=pkg_repl("system-config-samba","1.2.21-1.el4.1","noarch");
 

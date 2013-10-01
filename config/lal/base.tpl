@@ -31,7 +31,7 @@ include { 'rpms/base_x' };
 include { 'rpms/dialup' };
 include { 'rpms/text_internet' };
 include { 'rpms/graphics' };
-include { 'rpms/compat_arch_support' };
+#include { 'rpms/compat_arch_support' };
 include { 'rpms/editors' };
 include { 'rpms/emacs' };
 include { 'rpms/xemacs' };

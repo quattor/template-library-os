@@ -8,54 +8,19 @@
 
 template config/glite/3.1/postconfig;
 
-# SL 4.7 version change
-"/software/packages" = pkg_repl("words", "3.0-3.2", "noarch");
-"/software/packages" = pkg_repl("xorg-x11-xdm", "6.8.2-1.EL.33.0.2", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("openssl-devel","0.9.7a-43.17.el4_6.1", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("boost","1.32.0-6.rhel4", PKG_ARCH_GLITE);
-"/software/packages" = pkg_repl("compat-openldap","2.1.30-8.el4_6.4","i386");
-"/software/packages" = pkg_repl("libdbi","0.6.5-10.RHEL4.1", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("perl-LDAP","0.31-5","noarch");
-"/software/packages" = pkg_repl("swig","1.3.21-6", PKG_ARCH_GLITE);
-"/software/packages" = pkg_repl("perl-Convert-ASN1","0.18-3","noarch");
-"/software/packages" = pkg_repl("perl-XML-SAX","0.12-7","noarch");
-"/software/packages" = pkg_repl("krb5-devel","1.3.4-54", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("zlib-devel","1.2.1.2-1.2", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("guile","1.6.4-14", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("e2fsprogs-devel","1.35-12.11.el4_6.1", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("perl-XML-NamespaceSupport","1.08-6","noarch");
-"/software/packages" = pkg_repl("umb-scheme","3.2-36.EL4", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("gnuplot","4.0.0-4", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("glibc-devel","2.3.4-2.39", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("dialog","1.0.20040731-3", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("libtool-libs","1.5.6-4.EL4.2", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("glibc-headers","2.3.4-2.39", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("glibc-kernheaders","2.4-9.1.100.EL", PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("perl-Compress-Zlib","1.42-1.el4",PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl("rdesktop","1.3.1-5",PKG_ARCH_DEFAULT);
-"/software/packages" = pkg_repl('perl-TermReadKey','2.20-12',PKG_ARCH_DEFAULT);
-
 # gcc/g++ SL3 i386 compatibility
 "/software/packages" = pkg_repl("compat-libstdc++-33", "3.2.3-47.3", "i386");
+"/software/packages" = pkg_add("lal-libstdc++","3.2.3-1","i386");
 
-# Required by LFC Python API
-# lal-python just provides the 32-bit binary not installed by python i386 on a 64-bit platform
-"/software/packages" = pkg_repl("python","2.3.4-14.4.el4_6.1", "i386");
-"/software/packages" = pkg_repl("lal-python-bin-2.3.4-14.2","1.0.0-1","i386"); 
+# Required by GFAL/lcg_utils
+'/software/packages' = pkg_repl('compat-openldap','2.1.30-12.el4','i386');
 
-# Required by MPICH
-"/software/packages" = pkg_repl("ElectricFence", "2.2.2-19", PKG_ARCH_MPI);
-
-# Required by edg-job-xxx commands
+# Fix rpms version modification
+'/software/packages' = pkg_repl('perl-Compress-Zlib','1.42-1.el4','i386');
 '/software/packages' = pkg_repl('tk','8.4.7-3.el4_6.1','i386');
-'/software/packages' = pkg_repl('tk','8.4.7-3.el4_6.1', PKG_ARCH_DEFAULT);
-'/software/packages' = pkg_repl('tkinter','2.3.4-14.4.el4_6.1','i386');
-'/software/packages' = pkg_repl('tkinter','2.3.4-14.4.el4_6.1', PKG_ARCH_DEFAULT);
-'/software/packages' = pkg_repl('tix','8.1.4-98','i386');
-
-
-# Required by Atlas
-'/software/packages' = pkg_repl('libgfortran','4.1.2-14.EL4','i386');
+'/software/packages' = pkg_repl('tkinter','2.3.4-14.7.el4','i386');
+'/software/packages' = pkg_repl('words','3.0-3.2','noarch');
+'/software/packages' = pkg_repl('xorg-x11-xdm','6.8.2-1.EL.52','i386');
 
 
 # Reapply OS updates.
@@ -77,11 +42,9 @@ include { 'config/os/updates' };
 };
 
 
-# Define some symlinks to help with 32-bit compatibility
-include { 'components/symlink/config' };
-
 # Define a symlink to real library for libg2c from package libf2c
 # (required by Atlas)
+include { 'components/symlink/config' };
 "/software/components/symlink/links" =
     push(nlist(
                 "name", "/usr/lib/libg2c.so",
@@ -90,15 +53,6 @@ include { 'components/symlink/config' };
               )
          );
 
-# Define python2 used by gLite scripts to point to 32-bit version
-include { 'components/symlink/config' };
-"/software/components/symlink/links" =
-    push(nlist(
-                "name", GLITE_LOCATION+"/bin/python2",
-                "target", "/usr/bin/python32",
-                "replace",  nlist("all","no","link", "yes")
-              )
-         );
 
 
 # Remove directories from gpt-VDT1.2.2 preventing upgrade to gpt-VDT1.6.0
@@ -137,4 +91,9 @@ variable PURGE_VDT_FILE = "/var/quattor/purge-vdt-1.2.2";
               "restart",PURGE_VDT_FILE
              )
        );
+
+
+# OS errata and site specific updates
+# Always reinclude updates
+include { 'config/os/updates' };
 

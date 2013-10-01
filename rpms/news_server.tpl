@@ -7,6 +7,6 @@ unique template rpms/news_server;
 
 include { 'rpms/base' };
 
-"/software/packages"=pkg_repl("inews","2.3.5-12","x86_64");
-"/software/packages"=pkg_repl("inn","2.3.5-12","x86_64");
+"/software/packages"=pkg_repl("inews","2.3.5-12","i386");
+"/software/packages"=pkg_repl("inn","2.3.5-12","i386");
 

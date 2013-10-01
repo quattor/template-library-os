@@ -15,13 +15,9 @@ include { 'os/kernel_version_arch' };
 # Default architecture to use for gLite, if several architectures are
 # supported for a service.
 # This variable can be overriden at a site level or in a profile to
-# force a specific architecture (e.g. i386 on 64-bit machine).
-# If PKG_ARCH_GLITE is undef or equal to 'OS', use same arch as OS
-variable PKG_ARCH_GLITE = if ( !exists(PKG_ARCH_GLITE) || !is_defined(PKG_ARCH_GLITE) || PKG_ARCH_GLITE == 'OS' ) {
-                            PKG_ARCH_DEFAULT;
-                          } else {
-                            SELF;
-                          };
+# force a specific architecture (e.g. i386 on 64-bit machine)
+variable PKG_ARCH_GLITE ?= PKG_ARCH_DEFAULT;
+
 
 #
 # Predefined groups.
@@ -33,8 +29,6 @@ include { 'rpms/base_x' };
 include { 'rpms/dialup' };
 include { 'rpms/text_internet' };
 include { 'rpms/graphics' };
-include { 'rpms/compat_arch_support' };
-include { 'rpms/compat_arch_development' };
 include { 'rpms/editors' };
 include { 'rpms/emacs' };
 include { 'rpms/system_tools' }; # for openldap-clients
@@ -52,11 +46,11 @@ include { 'rpms/apt_rpm' }; # for CMS software management
 '/software/packages' = pkg_repl('perl-SOAP-Lite','0.69-1.el4.rf','noarch');
 # Dependencies for perl-SOAP-Lite
 '/software/packages'=pkg_repl('perl-Authen-SASL','2.10-1.el4.rf','noarch');
-'/software/packages'=pkg_repl('perl-GSSAPI','0.23-1.el4.rf',PKG_ARCH_GLITE);
-'/software/packages'=pkg_repl('perl-Net-SSLeay','1.25-3.2.el4.rf',PKG_ARCH_GLITE);
 '/software/packages'=pkg_repl('perl-IO-Socket-SSL','1.05-1.el4.rf','noarch');
 '/software/packages'=pkg_repl('perl-Net-Jabber','2.0-1.2.el4.rf','noarch');
 '/software/packages'=pkg_repl('perl-MIME-Lite','3.021-1.el4.rf','noarch');
+'/software/packages'=pkg_repl('perl-GSSAPI','0.23-1.el4.rf',PKG_ARCH_GLITE);
+'/software/packages'=pkg_repl('perl-Net-SSLeay','1.25-3.2.el4.rf',PKG_ARCH_GLITE);
 '/software/packages'=pkg_repl('perl-Net-XMPP','1.02-1.el4.rf','noarch');
 '/software/packages'=pkg_repl('perl-XML-Stream','1.22-1.2.el4.rf','noarch');
 # Dependency for perl-MIME-Lite
