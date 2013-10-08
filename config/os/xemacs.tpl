@@ -1,8 +1,8 @@
 unique template config/os/xemacs;
 
-variable XEMACS_VERSION ?= '21.5.29-12.el5.1';
-variable XEMACS_PACKAGES_BASE ?= '20090217-4.el5';
-variable XEMACS_PACKAGES_EXTRA ?= '20090217-7.el5';
+variable XEMACS_VERSION ?= '21.5.31-5.el6';
+variable XEMACS_PACKAGES_BASE ?= '20100727-1.el6';
+variable XEMACS_PACKAGES_EXTRA ?= '20100727-1.el6';
 
 '/software/packages' = pkg_repl('xemacs',XEMACS_VERSION,PKG_ARCH_DEFAULT);
 '/software/packages' = pkg_repl('xemacs-common',XEMACS_VERSION,PKG_ARCH_DEFAULT);

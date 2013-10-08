@@ -39,6 +39,8 @@ unique template config/quattor/client;
 '/software/packages' = pkg_repl('perl-Text-Reform','1.12.2-6.el6','noarch');
 '/software/packages' = pkg_repl('perl-TeX-Hyphen','0.140-9.el6','noarch');
 
+# perl-libwww-perl dependencies
+'/software/packages' = pkg_repl('mailcap','2.1.31-2.el6','noarch');
 
 # OS errata and site specific updates
 # Always reinclude. Must be last

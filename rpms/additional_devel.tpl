@@ -432,6 +432,7 @@ variable PKG_KERNEL_RPM_NAME ?= {
 "/software/packages"=pkg_repl("libsepol","2.0.41-4.el6","x86_64");
 "/software/packages"=pkg_repl("libsepol-devel","2.0.41-4.el6","x86_64");
 "/software/packages"=pkg_repl("libsmbclient","3.5.10-125.el6","x86_64");
+"/software/packages"=pkg_repl("samba-winbind-clients","3.5.10-125.el6","x86_64");
 "/software/packages"=pkg_repl("libsndfile","1.0.20-5.el6","x86_64");
 "/software/packages"=pkg_repl("libsoup","2.28.2-1.el6_1.1","x86_64");
 "/software/packages"=pkg_repl("libsoup-devel","2.28.2-1.el6_1.1","x86_64");
