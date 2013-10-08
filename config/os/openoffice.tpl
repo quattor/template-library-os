@@ -33,7 +33,7 @@ unique template config/os/openoffice;
 '/software/packages'=pkg_repl('libtheora','1.0alpha7-1','x86_64');
 '/software/packages'=pkg_repl('tomcat5-jsp-2.0-api','5.5.23-0jpp.17.el5_6','x86_64');
 '/software/packages'=pkg_repl('tomcat5-servlet-2.4-api','5.5.23-0jpp.17.el5_6','x86_64');
-'/software/packages'=pkg_repl('xalan-j2','2.7.0-6jpp.1','x86_64');
+'/software/packages'=pkg_repl('xalan','j2-2.7.0-6jpp.1','x86_64');
 '/software/packages'=pkg_repl('xerces-j2','2.7.1-7jpp.2.el5_4.2','x86_64');
 
 '/software/packages'=pkg_repl('libwpd','0.8.7-3.el5','x86_64');
