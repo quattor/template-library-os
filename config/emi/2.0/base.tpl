@@ -11,7 +11,7 @@ variable KERNEL_VARIANT ?= "";
 # Kernel version and CPU architecture
 #
 include { 'os/kernel_version_arch' };
-"/system/kernel/version" = KERNEL_VERSION;
+'/system/kernel/version' ?= KERNEL_VERSION + '.' + PKG_ARCH_KERNEL;
 
 # Default architecture to use for gLite, if several architectures are
 # supported for a service.
@@ -151,15 +151,4 @@ variable OS_UNWANTED_DEFAULT_DAEMONS ?= list ("yum", "yum-updatesd", "avahi-daem
 include { 'config/os/yum-autoupdate' };
 
 # Local site OS configuration
-variable OS_BASE_CONFIG_SITE_INCLUDE = if ( exists(OS_BASE_CONFIG_SITE) && is_defined(OS_BASE_CONFIG_SITE) ) {
-                                         return(OS_BASE_CONFIG_SITE);
-                                       } else {
-                                         return(null);
-                                       };
-
-
-
-include { return(OS_BASE_CONFIG_SITE_INCLUDE) };
-
-
-
+include { if_exists(to_string(OS_BASE_CONFIG_SITE)) };
