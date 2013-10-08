@@ -3,7 +3,7 @@ template rpms/errata/20130730-fix;
 '/software/packages'=pkg_repl('autofs','5.0.5-39.el6','x86_64');
 '/software/packages'=pkg_repl('dhcp-common','4.1.1-34.P1.el6','x86_64');#4.1.1-34.P1.el6
 
-'/software/packages'=pkg_repl('libipa_hbac-python','1.9.2-82.el6','x86_64');
+'/software/packages'=pkg_repl('libipa_hbac-python','1.9.2-82.4.el6_4','x86_64');
 '/software/packages'=pkg_repl('libipa_hbac','1.9.2-82.4.el6_4','x86_64');
 
 '/software/packages'=pkg_repl('libunistring','0.9.3-4.el6','x86_64');
