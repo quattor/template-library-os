@@ -2,9 +2,8 @@
 
 unique template config/os/java;
 
-variable JAVA_JDK_DEFAULT_VERSION ?= '1.6.0_31';
+variable JAVA_JDK_DEFAULT_VERSION ?= "1.6.0_20";
 variable JAVA_JPP_UTILS_VERSION ?= '1.7.3-1jpp.2.el5';
-variable JAVA_COMPAT_VERSION_SUFFIX ?= '3.sl5.jpp';
 
 # java-sun-compat is required for JPP support. Avoid to change its version under normal circumstances.
 # Where jdk version is x.y.z_u, java-sun-compat = x.y.z.u. RPM name is java-xxx-sun-compat, where
@@ -17,7 +16,7 @@ variable JAVA_SUN_COMPAT_VERSION ?= {
     SELF['compat'] = JAVA_JDK_DEFAULT_VERSION+'-1jpp';
   } else {
     SELF['jdk'] = jdk_version_toks[1];
-    SELF['compat'] = jdk_version_toks[1]+'.'+jdk_version_toks[2]+'-'+JAVA_COMPAT_VERSION_SUFFIX;
+    SELF['compat'] = jdk_version_toks[1]+'.'+jdk_version_toks[2]+'-1.sl5.jpp';
   };
   SELF;
 };

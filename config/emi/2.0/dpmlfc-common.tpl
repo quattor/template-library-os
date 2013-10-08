@@ -12,7 +12,7 @@ unique template config/emi/2.0/dpmlfc-common;
 '/software/packages' = pkg_repl('perl-Archive-Tar','1.39.1-1.el5_5.2','noarch');
 '/software/packages' = pkg_repl('perl-IO-Zlib','1.04-4.2.1','noarch');
 
-#"/software/packages" = pkg_repl("mod_ssl","2.2.3-63.sl5.1","x86_64");
+"/software/packages" = pkg_repl("mod_ssl","2.2.3-63.sl5.1","x86_64");
 "/software/packages" = pkg_repl("distcache",'1.4.5-14.1','x86_64');
 
 "/software/packages"=pkg_repl("krb5-devel","1.6.1-70.el5",PKG_ARCH_GLITE);
