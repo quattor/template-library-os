@@ -28,10 +28,10 @@ template rpms/errata/20130329-fix;
     pkg_repl('atk-devel','1.12.2-1.fc6',PKG_ARCH_DEFAULT);
     pkg_repl('audiofile-devel','0.2.6-5',PKG_ARCH_DEFAULT);
     pkg_repl('cairo-devel','1.2.4-5.el5',PKG_ARCH_DEFAULT);
-    pkg_repl('dbus-glib-devel','0.73-10.el5_5',PKG_ARCH_DEFAULT);
+    pkg_repl('dbus-glib-devel','0.73-11.el5_9',PKG_ARCH_DEFAULT);
     pkg_repl('esound-devel','0.2.36-3',PKG_ARCH_DEFAULT);
     pkg_repl('fontconfig-devel','2.4.1-7.el5',PKG_ARCH_DEFAULT);
-    pkg_repl('freetype-devel','2.2.1-31.el5_8.1',PKG_ARCH_DEFAULT);
+    pkg_repl('freetype-devel','2.2.1-32.el5_9.1',PKG_ARCH_DEFAULT);
     pkg_repl('GConf2-devel','2.14.0-9.el5',PKG_ARCH_DEFAULT);
     pkg_repl('gnome-keyring-devel','0.6.0-1.fc6',PKG_ARCH_DEFAULT);
     pkg_repl('gnome-vfs2-devel','2.16.2-10.el5',PKG_ARCH_DEFAULT);
@@ -107,6 +107,12 @@ template rpms/errata/20130329-fix;
 '/software/packages' = if (exists(SELF[escape('rpm-build')])) {
     pkg_repl('xz', '4.999.9-0.3.beta.20091007git.el5', PKG_ARCH_DEFAULT);
     pkg_repl('xz-libs', '4.999.9-0.3.beta.20091007git.el5', PKG_ARCH_DEFAULT);
+} else {
+    SELF;
+};
+
+'/software/packages' = if (exists(SELF[escape('sssd')])) {
+    pkg_repl('libipa_hbac', '1.5.1-58.el5', PKG_ARCH_DEFAULT);
 } else {
     SELF;
 };
