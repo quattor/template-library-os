@@ -101,11 +101,4 @@ include { OS_NS_OS + 'java' };
 
 
 # Local site OS configuration
-variable OS_BASE_CONFIG_SITE_INCLUDE = if ( exists(OS_BASE_CONFIG_SITE) && is_defined(OS_BASE_CONFIG_SITE) ) {
-                                         return(OS_BASE_CONFIG_SITE);
-                                       } else {
-                                         return(null);
-                                       };
-include { return(OS_BASE_CONFIG_SITE_INCLUDE) };
-
-
+include { if_exists(to_string(OS_BASE_CONFIG_SITE)) };
