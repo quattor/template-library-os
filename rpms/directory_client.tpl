@@ -63,6 +63,7 @@ unique template rpms/directory_client;
 "/software/packages"=pkg_repl("info","4.13a-8.el6","x86_64");
 "/software/packages"=pkg_repl("initscripts","9.03.31-2.el6","x86_64");
 "/software/packages"=pkg_repl("ipa-client","2.2.0-16.el6","x86_64");
+"/software/packages"=pkg_repl("autofs","5.0.5-54.el6","x86_64");#dependency ipa-client
 "/software/packages"=pkg_repl("ipa-python","2.2.0-16.el6","x86_64");
 "/software/packages"=pkg_repl("iproute","2.6.32-20.el6","x86_64");
 "/software/packages"=pkg_repl("iptables","1.4.7-5.1.el6_2","x86_64");

@@ -146,6 +146,7 @@ unique template rpms/printing;
 "/software/packages"=pkg_repl("libsemanage","2.0.43-4.1.el6","x86_64");
 "/software/packages"=pkg_repl("libsepol","2.0.41-4.el6","x86_64");
 "/software/packages"=pkg_repl("libsmbclient","3.5.10-125.el6","x86_64");
+"/software/packages"=pkg_repl("samba-winbind-clients","3.5.10-125.el6","x86_64");
 "/software/packages"=pkg_repl("libstdc++","4.4.6-4.el6","x86_64");
 "/software/packages"=pkg_repl("libsysfs","2.1.0-6.1.el6","x86_64");
 #NOTFOUND "/software/packages"=pkg_repl("libtermcap","2.0.8-46.1","x86_64");
