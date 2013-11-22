@@ -11,8 +11,5 @@ variable AII_OSINSTALL_OS_VERSION ?= NODE_OS_VERSION;
 # URL part after version number where to find OS distribution
 variable AII_OSINSTALL_SUBURL ?= '/base';
 
-
 # Include base configuration for AII
-
 include { 'quattor/aii/config' };
-
