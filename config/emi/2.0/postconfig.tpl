@@ -27,21 +27,12 @@ include { 'components/symlink/config' };
               )
          );
 
-# Define python2 used by gLite scripts to point to 32-bit version
+# Define python2 used by gLite scripts to point to the default python binary 
 include { 'components/symlink/config' };
 "/software/components/symlink/links" =
     push(nlist(
                 "name", GLITE_LOCATION+"/bin/python2",
-                "target", "/usr/bin/python32",
+                "target", "/usr/bin/python",
                 "replace",  nlist("all","no","link", "yes")
               )
          );
-
-# Various Quattor supplied dependencies MUST be updated (testing version shere).
-#FIXME when things are official ? Maybe there's already an official package ?
-#"/software/packages"={
-#	pkg_repl("perl-AppConfig"); 
-#	pkg_repl("perl-CAF");
-#	pkg_repl("perl-LC");
-#	pkg_del("perl-AppConfig-caf");
-#	};
