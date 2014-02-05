@@ -256,3 +256,8 @@ template rpms/errata/20130730-fix;
 } else {
     SELF;
 };
+
+# Resolve conflicts between kernel-abi-whitelists and kabi-whitelists RPMs
+'/software/packages'=pkg_add('kernel-abi-whitelists','2.6.32-431.1.2.el6','noarch');
+'/software/packages'=pkg_del('kabi-whitelists');
+
