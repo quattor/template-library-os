@@ -257,6 +257,10 @@ template rpms/errata/20130730-fix;
     SELF;
 };
 
+# Resolve conflicts between kernel-abi-whitelists and kabi-whitelists RPMs
+'/software/packages'=pkg_add('kernel-abi-whitelists','2.6.32-431.1.2.el6','noarch');
+'/software/packages'=pkg_del('kabi-whitelists');
+
 # remove samba v4 packages if v3 packages are present
 '/software/packages' = if ( exists(SELF[escape('samba-common')]) ) { 
     pkg_del('samba4-common');
