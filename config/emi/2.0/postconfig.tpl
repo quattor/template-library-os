@@ -27,13 +27,12 @@ include { 'components/symlink/config' };
               )
          );
 
-# Define python2 used by gLite scripts to point to 32-bit version
+# Define python2 used by gLite scripts to point to the default python binary 
 include { 'components/symlink/config' };
 "/software/components/symlink/links" =
     push(nlist(
                 "name", GLITE_LOCATION+"/bin/python2",
-                "target", "/usr/bin/python32",
+                "target", "/usr/bin/python",
                 "replace",  nlist("all","no","link", "yes")
               )
          );
-
