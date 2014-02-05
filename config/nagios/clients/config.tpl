@@ -5,10 +5,11 @@
 
 unique template config/nagios/clients/config;
 
-'/software/packages'=pkg_repl('nagios-nrpe','2.5.2-1.el4.rf','x86_64');
-'/software/packages'=pkg_repl('nagios-plugins','1.4.9-1.el4.rf','x86_64');
-'/software/packages'=pkg_repl('perl-Crypt-DES','2.05-3.2.el4.rf','x86_64');
-'/software/packages'=pkg_repl('perl-Net-SNMP','5.2.0-1.2.el4.rf','noarch');
-'/software/packages'=pkg_repl('perl-Socket6','0.20-1.el4.rf','x86_64');
-'/software/packages'=pkg_repl('fping','2.4-1.b2.2.el4.rf','x86_64');
-'/software/packages'=pkg_repl('nagios-plugins-lal','0-1','noarch');
+'/software/packages'=pkg_repl('nrpe','2.12-16.el5','x86_64');
+'/software/packages'=pkg_repl('nagios-common','2.12-10.el5','x86_64');
+'/software/packages'=pkg_repl('nagios-plugins','1.4.15-2.el5','x86_64');
+'/software/packages'=pkg_repl('nagios-plugins-disk','1.4.15-2.el5','x86_64');
+'/software/packages'=pkg_repl('nagios-plugins-ntp','1.4.15-2.el5','x86_64');
+'/software/packages'=pkg_repl('nagios-plugins-swap','1.4.15-2.el5','x86_64');
+'/software/packages'=pkg_repl('nagios-plugins-time','1.4.15-2.el5','x86_64');
+
