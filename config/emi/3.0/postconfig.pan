@@ -5,7 +5,7 @@
 # applied and may be used to do late customizations after applying OS
 # updates.
 
-template config/emi/2.0/postconfig;
+template config/emi/3.0/postconfig;
 
 
 # Reapply OS updates.
