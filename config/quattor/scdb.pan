@@ -1,6 +1,6 @@
 template config/quattor/scdb;
 
-prefix '/software/packages';
+'/software/packages'=pkg_repl('createrepo','0.4.11-3.el5','noarch');
+'/software/packages'=pkg_repl('python-lxml','2.0.11-1.el5',PKG_ARCH_DEFAULT);
 
-'{createrepo}' ?= nlist();
-'{python-lxml}' ?= nlist();
+include { 'config/os/updates' };
