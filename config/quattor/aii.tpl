@@ -13,7 +13,6 @@ variable AII_OSINSTALL_SUBURL ?= '/base';
 
 variable AII_OSINSTALL_BASE_PACKAGES ?= list (
     "perl-LC",
-    "perl-AppConfig-caf",
     "perl-Proc-ProcessTable",
     "perl-CAF",
     "perl-common-sense",
