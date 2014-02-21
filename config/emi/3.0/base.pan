@@ -47,6 +47,8 @@ include { 'rpms/legacy_unix'};
 include {'rpms/system_admin_tools'};#some RPMS were previously in base_x
 
 
+# Add depencies required by previous rpms templates
+'/software/packages'=pkg_repl('mod_ssl','2.2.15-26.sl6','x86_64');
 
 #
 # Add some RPMs normally part of SLC but not included in any group in SL
