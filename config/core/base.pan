@@ -1,8 +1,12 @@
 unique template config/core/base;
 
 variable USE_OFED ?= false;
+
+# Default if not properly defined elsewhere, using the standard mechanism
 variable OS_VERSION_PARAMS ?= nlist(
+    "distribution", "sl",
     "major", "sl6",
+    "majorversion", "6",
     "minor", "x",
     "version", "sl6x",
     "arch", "x86_64"
@@ -30,6 +34,9 @@ include { 'os/kernel_version_arch' };
 # This variable can be overriden at a site level or in a profile to
 # force a specific architecture (e.g. i386 on 64-bit machine)
 variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
+
+# Minimum list of packages
+include { 'rpms/minimum' };
 
 # core extras
 include {'config/core/daemons'};
