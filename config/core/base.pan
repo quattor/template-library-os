@@ -2,6 +2,8 @@ unique template config/core/base;
 
 variable USE_OFED ?= false;
 
+variable OS_BASE_OPTIONAL_PACKAGES ?= false;
+
 # Default if not properly defined elsewhere, using the standard mechanism
 variable OS_VERSION_PARAMS ?= nlist(
     "distribution", "sl",
@@ -36,7 +38,12 @@ include { 'os/kernel_version_arch' };
 variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
 
 # Minimum list of packages
-include { 'rpms/minimum' };
+variable OS_BASE_RPMS_TEMPLATE ?= if ( OS_BASE_OPTIONAL_PACKAGES ) {
+                                    'rpms/base';
+                                  } else {
+                                    'rpms/core';
+                                  };
+include { OS_BASE_RPMS_TEMPLATE };
 
 # core extras
 include {'config/core/daemons'};

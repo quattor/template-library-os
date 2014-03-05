@@ -20,26 +20,6 @@ include { 'quattor/aii/config' };
 
 "/system/aii/osinstall/ks/mouse" = null;
 
-"/system/aii/osinstall/ks/base_packages" = list(
-    "perl-LC",
-    "perl-IO-String",
-    "perl-CAF",
-    "perl-parent",
-    "perl-common-sense",
-    "perl-CDB_File",
-    "perl-GSSAPI",
-    "perl-JSON-XS",
-    "ccm",
-    "perl-Pod-POM",
-    "perl-Template-Toolkit",
-    "ncm-ncd",
-    "ncm-query",
-    "ncm-spma",
-    "cdp-listend",
-    "ncm-cdispd",
-    "cabundle-hpcugent",
-);
-
 "/system/aii/osinstall/ks/packages_args" = list("--ignoremissing");
 
 "/system/aii/osinstall/ks/end_script" = "%end";
