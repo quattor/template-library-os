@@ -22,7 +22,6 @@ variable OS_REPOSITORY_LIST = list(
     OS_VERSION_PARAMS['version']+'_'+OS_VERSION_PARAMS['arch']+'_updates',
     OS_VERSION_PARAMS['major']+'_addons',
     OS_VERSION_PARAMS['major']+'_epel',
-    'java',
     'site',
 );
 
