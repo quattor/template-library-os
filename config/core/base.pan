@@ -2,7 +2,8 @@ unique template config/core/base;
 
 variable USE_OFED ?= false;
 
-variable OS_BASE_OPTIONAL_PACKAGES ?= false;
+variable OS_CORE_ONLY ?= false;
+variable SITE_ADDITIONAL_PACKAGES ?= undef;
 
 # Default if not properly defined elsewhere, using the standard mechanism
 variable OS_VERSION_PARAMS ?= nlist(
@@ -38,12 +39,10 @@ include { 'os/kernel_version_arch' };
 variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
 
 # Minimum list of packages
-variable OS_BASE_RPMS_TEMPLATE ?= if ( OS_BASE_OPTIONAL_PACKAGES ) {
-                                    'rpms/base';
-                                  } else {
-                                    'rpms/core';
-                                  };
-include { OS_BASE_RPMS_TEMPLATE };
+include {'rpms/group/core' };
+include { if ( ! OS_CORE_ONLY ) 'rpms/group/base' };
+include { if ( ! OS_CORE_ONLY ) 'rpms/management-utils' };
+include { if ( is_defined(SITE_ADDITIONAL_PACKAGES) ) if_exists(SITE_ADDITIONAL_PACKAGES) };
 
 # core extras
 include {'config/core/daemons'};
