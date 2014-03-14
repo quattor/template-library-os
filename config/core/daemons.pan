@@ -1,9 +1,13 @@
 @{
-    Template listing daemons  that must be enabled or disabled in all SL5-based installations
+    Template listing daemons  that must be enabled or disabled in all SL6-based installations
 
 }
 
 unique template config/core/daemons;
+
+variable OS_WANTED_DEFAULT_DAEMONS ?= list (
+    "sshd",
+);
 
 variable OS_UNWANTED_DEFAULT_DAEMONS ?= list (
     "yum", "yum-updatesd", "avahi-daemon",
@@ -16,6 +20,11 @@ variable OS_UNWANTED_DEFAULT_DAEMONS ?= list (
 );
 
 "/software/components/chkconfig/service/" = {
+	foreach(k;v;OS_WANTED_DEFAULT_DAEMONS) {
+            SELF[v]["on"]="";
+	    SELF[v]["off"]=null;
+	    SELF[v]["startstop"] = true;
+	};
 	foreach(k;v;OS_UNWANTED_DEFAULT_DAEMONS) {
             SELF[v]["on"]=null;
 	    SELF[v]["off"]="";

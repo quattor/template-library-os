@@ -12,33 +12,13 @@ variable AII_OSINSTALL_OPTION_LANG_SUPP = list("none");
 variable AII_OSINSTALL_OPTION_ZEROMBR_ARGS = list('');
 variable AII_OSINSTALL_NEEDS_SECTION_END = true;
 
-variable AII_OSINSTALL_OS_VERSION ?= 'sl5x-x86_64';
+variable AII_OSINSTALL_OS_VERSION ?= OS_VERSION_PARAMS['version'] + '-' + OS_VERSION_PARAMS['arch'];
 
 # Include base configuration for AII
 
 include { 'quattor/aii/config' };
 
 "/system/aii/osinstall/ks/mouse" = null;
-
-"/system/aii/osinstall/ks/base_packages" = list(
-    "perl-LC",
-    "perl-IO-String",
-    "perl-CAF",
-    "perl-parent",
-    "perl-common-sense",
-    "perl-CDB_File",
-    "perl-GSSAPI",
-    "perl-JSON-XS",
-    "ccm",
-    "perl-Pod-POM",
-    "perl-Template-Toolkit",
-    "ncm-ncd",
-    "ncm-query",
-    "ncm-spma",
-    "cdp-listend",
-    "ncm-cdispd",
-    "cabundle-hpcugent",
-);
 
 "/system/aii/osinstall/ks/packages_args" = list("--ignoremissing");
 

@@ -1,15 +1,22 @@
 unique template config/core/base;
 
 variable USE_OFED ?= false;
+
+variable OS_CORE_ONLY ?= false;
+variable SITE_ADDITIONAL_PACKAGES ?= undef;
+
+# Default if not properly defined elsewhere, using the standard mechanism
 variable OS_VERSION_PARAMS ?= nlist(
+    "distribution", "sl",
     "major", "sl5",
+    "majorversion", "5",
     "minor", "x",
     "version", "sl5x",
     "arch", "x86_64"
 );
 
-variable RPM_BASE_FLAVOUR = '5';
-variable RPM_BASE_FLAVOUR_VERSIONID = 5;
+variable RPM_BASE_FLAVOUR = '6';
+variable RPM_BASE_FLAVOUR_VERSIONID = 6;
 variable RPM_BASE_FLAVOUR_NAME = format('el%s',RPM_BASE_FLAVOUR_VERSIONID);
 
 
@@ -31,15 +38,17 @@ include { 'os/kernel_version_arch' };
 # force a specific architecture (e.g. i386 on 64-bit machine)
 variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
 
+# Minimum list of packages
+include {'rpms/group/core' };
+include { if ( ! OS_CORE_ONLY ) 'rpms/group/base' };
+include { if ( ! OS_CORE_ONLY ) 'rpms/management-utils' };
+include { if ( is_defined(SITE_ADDITIONAL_PACKAGES) ) if_exists(SITE_ADDITIONAL_PACKAGES) };
+
 # core extras
 include {'config/core/daemons'};
-include {'config/core/boot'};
+include { 'config/core/boot'};
 
 
 # Local site OS configuration
-variable OS_BASE_CONFIG_SITE_INCLUDE = if ( exists(OS_BASE_CONFIG_SITE) && is_defined(OS_BASE_CONFIG_SITE) ) {
-    return(OS_BASE_CONFIG_SITE);
-} else {
-    return(null);
-};
-include { return(OS_BASE_CONFIG_SITE_INCLUDE) };
+include { OS_BASE_CONFIG_SITE };
+
