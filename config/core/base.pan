@@ -11,6 +11,7 @@ variable OS_VERSION_PARAMS ?= nlist(
     "major", "sl6",
     "majorversion", "6",
     "minor", "x",
+    "flavour", "x",
     "version", "sl6x",
     "arch", "x86_64"
 );
@@ -29,10 +30,8 @@ variable KERNEL_FIRMWARE_ARCH ?= "noarch";
 # Kernel version and CPU architecture
 #
 include { 'os/kernel_version_arch' };
-## new kernel naming
-"/system/kernel/version" = KERNEL_VERSION+'.'+PKG_ARCH_DEFAULT;
 
-# Default architecture to use for gLite, if several architectures are
+# Default architecture to use for packages, if several architectures are
 # supported for a service.
 # This variable can be overriden at a site level or in a profile to
 # force a specific architecture (e.g. i386 on 64-bit machine)
