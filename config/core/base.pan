@@ -23,8 +23,6 @@ variable RPM_BASE_FLAVOUR_NAME = format('el%s',RPM_BASE_FLAVOUR_VERSIONID);
 
 variable OS_BASE_CONFIG_SITE ?= null;
 
-variable KERNEL_VARIANT ?= "";
-
 variable KERNEL_FIRMWARE_ARCH ?= "noarch";
 #
 # Kernel version and CPU architecture
