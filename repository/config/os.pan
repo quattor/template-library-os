@@ -16,7 +16,7 @@ variable YUM_OS_SNAPSHOT_NS ?= YUM_SNAPSHOT_NS;
 # first in the list.  If not, then AII installations will fail 
 # because the post-install script will look in the wrong place.
 include { 'repository/config/quattor' };
-variable OS_REPOSITORY_LIST = list(
+variable OS_REPOSITORY_LIST ?= list(
     OS_VERSION_PARAMS['version']+'_'+OS_VERSION_PARAMS['arch'],
     OS_VERSION_PARAMS['version']+'_'+OS_VERSION_PARAMS['arch']+'_errata',
     OS_VERSION_PARAMS['version']+'_'+OS_VERSION_PARAMS['arch']+'_updates',
