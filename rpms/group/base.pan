@@ -67,10 +67,8 @@ prefix '/software/packages';
 '{irqbalance}' = nlist();
 '{iwlwifi-1000-ucode}' = nlist();
 '{iwlwifi-3945-ucode}' = nlist();
-'{iwlwifi-4965-ucode}' = nlist();
 '{iwlwifi-5000-ucode}' = nlist();
 '{iwlwifi-5150-ucode}' = nlist();
-'{iwlwifi-6000-ucode}' = nlist();
 '{jwhois}' = nlist();
 '{krb5-workstation}' = nlist();
 '{ksh}' = nlist();
@@ -147,6 +145,8 @@ prefix '/software/packages';
 '{ypbind}' = nlist();
 '{yum}' = nlist();
 '{yum-autoupdate}' = nlist();
-'{yum-conf}' = nlist();
+# Quattor 14.2 need yum-3.2.29 which have
+# issue with yum-conf
+#'{yum-conf}' = nlist();
 '{yum-metadata-parser}' = nlist();
 '{zip}' = nlist();

@@ -9,7 +9,7 @@ unique template rpms/package_default_versions;
 # of the base installation, using KS 'packages'.
 variable PKG_DEFAULT_VERSIONS = nlist(
   'default',    nlist( '_perl-common-sense', list('3.5-1.el5', 'noarch'),
-                       '_perl-JSON-XS', list('1.43-1.el5', PKG_ARCH_DEFAULT),
+                       '_perl-JSON-XS', list('2.30-1.el5.rf', PKG_ARCH_DEFAULT),
                        '_perl-Proc-ProcessTable', list('0.48-1.el5', PKG_ARCH_DEFAULT),
                        '_perl-Set-Scalar', list('1.25-1.el5', 'noarch'),
                      ),
