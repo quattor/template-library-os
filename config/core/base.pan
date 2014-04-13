@@ -2,6 +2,14 @@ unique template config/core/base;
 
 variable USE_OFED ?= false;
 
+@{
+desc =  if true, standard network configuration is done as part of the base OS configuration.\
+ if false, network configuration must be done as part of the site-specific configuration.
+values = true or false
+default = true
+required = no
+}
+variable OS_BASE_CONFIGURE_NETWORK ?= true;
 variable OS_CORE_ONLY ?= false;
 variable SITE_ADDITIONAL_PACKAGES ?= undef;
 
@@ -45,7 +53,11 @@ include { if ( is_defined(SITE_ADDITIONAL_PACKAGES) ) if_exists(SITE_ADDITIONAL_
 include {'config/core/daemons'};
 include { 'config/core/boot'};
 
+# Configure network, except if disabled
+variable DEBUG = debug(format('%s: OS_BASE_CONFIGURE_NETWORK=%s',OBJECT,to_string(OS_BASE_CONFIGURE_NETWORK)));
+include { if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config' };
 
 # Local site OS configuration
+variable DEBUG = debug(format('%s: OS_BASE_CONFIG_SITE=%s',OBJECT,to_string(OS_BASE_CONFIG_SITE)));
 include { OS_BASE_CONFIG_SITE };
 
