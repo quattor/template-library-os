@@ -47,5 +47,6 @@ include { 'config/core/boot'};
 
 
 # Local site OS configuration
+variable DEBUG = debug(format('%s: OS_BASE_CONFIG_SITE=%s',OBJECT,to_string(OS_BASE_CONFIG_SITE)));
 include { OS_BASE_CONFIG_SITE };
 
