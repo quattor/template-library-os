@@ -29,9 +29,13 @@ variable OS_REPOSITORY_LIST ?= {
     append(OS_VERSION_PARAMS['version']+'_'+OS_VERSION_PARAMS['arch']+'_errata');
     append(OS_VERSION_PARAMS['version']+'_'+OS_VERSION_PARAMS['arch']+'_updates');
     append(OS_VERSION_PARAMS['major']+'_addons');
+    # EPEL: configure both epel and os-specific epel: only one will match depending
+    # on site choice...
     append(OS_VERSION_PARAMS['major']+'_epel');
+    append('epel');
     if ( REPOSITORY_EPEL_TESTING_ENABLED ) {
       append(OS_VERSION_PARAMS['major']+'_epel_testing');
+      append('epel_testing');
     };
     append('site');
 };
