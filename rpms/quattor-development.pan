@@ -10,6 +10,7 @@ prefix '/software/packages';
 '{perl-Test-MockModule}' = nlist();
 '{perl-Test-MockObject}' = nlist();
 '{perl-Test-NoWarnings}' = nlist();
+'{perl-Class-Inspector}' = nlist();
 
 '{rpmdevtools}' = nlist();
 
