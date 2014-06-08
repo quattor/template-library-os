@@ -5,19 +5,45 @@
 
 unique template config/core/daemons;
 
-variable OS_WANTED_DEFAULT_DAEMONS ?= list (
-    "sshd",
-);
+variable OS_WANTED_DEFAULT_DAEMONS ?= {
+  append('sshd');
+  if ( ! OS_CORE_ONLY && OS_CORE_ISCSI_ENABLED ) {
+    append('iscsi');
+  };
+  SELF;
+};
 
-variable OS_UNWANTED_DEFAULT_DAEMONS ?= list (
-    "yum", "yum-updatesd", "avahi-daemon",
-    "hplip", "pcscd", "gpm", "ipsec",
-    "bluetooth", "cups", "iscsi","iscsid",
-    "isdn","jexec", 'yum-cron','tog-pegasus',
-    "wpa_supplicant","pppoe-server","postfix",
-    "portreserve","haldaemon","NetworkManager",
-    "abrt","kdump","rhsmcertd", "stap-server",
-);
+variable OS_UNWANTED_DEFAULT_DAEMONS ?= {
+  append('abrt');
+  append('avahi-daemon');
+  append('bluetooth');
+  append('cups');
+  append('hplip');
+  append('gpm');
+  append('haldaemon');
+  append('ipsec');
+  append('iscsid');
+  append('isdn');
+  append('jexec'); 
+  append('kdump');
+  append('NetworkManager');
+  append('pcscd');
+  append('postfix');
+  append('portreserve');
+  append('pppoe-server');
+  append('rhsmcertd'); 
+  append('stap-server');
+  append('tog-pegasus');
+  append('wpa_supplicant');
+  append('yum'); 
+  append('yum-cron');
+  append('yum-updatesd');
+  if ( OS_CORE_ONLY || ! OS_CORE_ISCSI_ENABLED ) {
+    append('iscsi');
+    append('iscsid');
+  };
+  SELF;
+};
 
 "/software/components/chkconfig/service/" = {
 	foreach(k;v;OS_WANTED_DEFAULT_DAEMONS) {
