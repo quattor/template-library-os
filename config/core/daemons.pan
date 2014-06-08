@@ -8,6 +8,7 @@ unique template config/core/daemons;
 variable OS_WANTED_DEFAULT_DAEMONS ?= {
   append('sshd');
   if ( ! OS_CORE_ONLY && OS_CORE_ISCSI_ENABLED ) {
+    # Start only iscsi service, iscsid will be started automatically when needed
     append('iscsi');
   };
   SELF;
