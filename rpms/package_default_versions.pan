@@ -8,10 +8,10 @@ unique template rpms/package_default_versions;
 # Normally there should be no OS specific version as OS-provided RPMs can be YUM installed as part
 # of the base installation, using KS 'packages'.
 variable PKG_DEFAULT_VERSIONS = nlist(
-  'default',    nlist( '_perl-common-sense',      list('3.6-4.el7', 'noarch'),
-                       '_perl-JSON-XS',           list('3.01-2.el7', PKG_ARCH_DEFAULT),
+  'default',    nlist( '_perl-common-sense', list('3.6-4.el7', 'noarch'),
+                       '_perl-JSON-XS', list('3.01-2.el7', PKG_ARCH_DEFAULT),
                        '_perl-Proc-ProcessTable', list('0.48-1.el7', PKG_ARCH_DEFAULT),
-                       '_perl-Set-Scalar',        list('1.25-9.el7', 'noarch'),
+                       '_perl-Set-Scalar', list('1.25-9.el7', 'noarch'),
                      ),
 );
 

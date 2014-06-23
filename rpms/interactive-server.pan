@@ -2,5 +2,46 @@ unique template rpms/interactive-server;
 
 prefix '/software/packages';
 
-'{xterm}' = nlist();
+# X-system
+'{xterm}'          ?= nlist();
+'{xorg-x11-xauth}' ?= nlist();
+'{dbus-x11}' ?= nlist();
+
+# Cernlib
+'{cernlib-utils}'            ?= nlist();
+'{cernlib-g77-utils}'        ?= nlist();
+'{cernlib-packlib}'          ?= nlist();
+'{cernlib-packlib-g77}'      ?= nlist();
+'{cernlib-packlib-gfortran}' ?= nlist();
+
+# Libreoffice
+'{libreoffice}'             ?= nlist();
+'{libreoffice-langpack-fr}' ?= nlist();
+'{libreoffice-langpack-en}' ?= nlist();
+
+# Graphics
+'{gnuplot}' ?= nlist();
+'{plplot}'  ?= nlist();
+'{xfig}'    ?= nlist();
+'{gimp}'    ?= nlist();
+
+# Maxima
+'{maxima-gui}' ?= nlist();
+
+# Network tools
+'{telnet}'          ?= nlist();
+'{ftp}'             ?= nlist();
+'{lftp}'            ?= nlist();
+'{nc}'              ?= nlist();
+'{wireshark}'       ?= nlist();
+'{wireshark-gnome}' ?= nlist();
+'{rdesktop}'        ?= nlist();
+'{tigervnc}'        ?= nlist();
+
+# DB
+'{mysql}' ?= nlist();
+'{postgresql}' ?= nlist();
+
+# Ghostview
+'{gv}' ?= nlist();
 
