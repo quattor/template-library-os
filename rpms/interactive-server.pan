@@ -21,6 +21,9 @@ prefix '/software/packages';
 # Maxima
 '{maxima-gui}' ?= nlist();
 
+# Mail
+'{mutt}' ?= nlist();
+
 # Network tools
 '{telnet}'          ?= nlist();
 '{ftp}'             ?= nlist();
