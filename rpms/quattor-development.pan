@@ -4,6 +4,7 @@ prefix '/software/packages';
 
 '{perl-Template-Toolkit}' = nlist();
 '{perl-Text-Autoformat}' = nlist();
+'{perl-Text-Glob}' = nlist();
 '{perl-Pod-POM}' = nlist();
 '{perl-Test-Harness}' = nlist();
 '{perl-Test-Simple}' = nlist();
