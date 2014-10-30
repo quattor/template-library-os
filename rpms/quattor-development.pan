@@ -6,12 +6,17 @@ prefix '/software/packages';
 '{perl-Text-Autoformat}' = nlist();
 '{perl-Text-Glob}' = nlist();
 '{perl-Pod-POM}' = nlist();
+'{perl-Test-Deep}' = nlist();
 '{perl-Test-Harness}' = nlist();
+'{perl-Test-Pod}' = nlist();
 '{perl-Test-Simple}' = nlist();
 '{perl-Test-MockModule}' = nlist();
 '{perl-Test-MockObject}' = nlist();
 '{perl-Test-NoWarnings}' = nlist();
 '{perl-Class-Inspector}' = nlist();
+'{perl-JSON-Any}' = nlist();
+'{perl-Config-Properties}' = nlist();
+'{perl-Config-Tiny}' = nlist();
 
 '{rpmdevtools}' = nlist();
 
