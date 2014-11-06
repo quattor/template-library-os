@@ -6,13 +6,7 @@ prefix '/software/packages';
 '{xterm}'          ?= nlist();
 '{xorg-x11-xauth}' ?= nlist();
 '{dbus-x11}' ?= nlist();
-
-# Cernlib
-'{cernlib-utils}'            ?= nlist();
-'{cernlib-g77-utils}'        ?= nlist();
-'{cernlib-packlib}'          ?= nlist();
-'{cernlib-packlib-g77}'      ?= nlist();
-'{cernlib-packlib-gfortran}' ?= nlist();
+'{libXScrnSaver}' ?= nlist();
 
 # Libreoffice
 '{libreoffice}'             ?= nlist();
