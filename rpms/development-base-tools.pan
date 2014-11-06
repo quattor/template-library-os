@@ -6,13 +6,6 @@ include { 'rpms/group/development' };
 
 prefix '/software/packages';
 
-# CMake 2.8
-'{cmake28-gui}' ?= nlist();
-
-# Compat gcc
-'{compat-gcc-34}' ?= nlist();
-'{compat-gcc-34-g77}' ?= nlist();
-
 # Git
 '{git}' ?= nlist();
 
@@ -32,8 +25,14 @@ prefix '/software/packages';
 '{libcanberra-gtk2}' ?= nlist();
 '{libXi-devel}' ?= nlist();
 
+# Openmpi
+'{openmpi}' ?= nlist();
+
 # Perl
 '{perl-SVN-Notify}' ?= nlist();
+
+# Python
+'{python-devel}' ?= nlist();
 
 # XML
 '{expat-devel}' ?= nlist();
