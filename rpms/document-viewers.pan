@@ -4,3 +4,4 @@ prefix '/software/packages';
 
 '{evince}' = nlist();
 '{a2ps}' = nlist();
+'{xdvik}' = nlist();

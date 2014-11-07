@@ -16,3 +16,4 @@ prefix '/software/packages';
 '{xemacs-packages-extra}' = nlist();
 '{xemacs=packages-extra-el}' = nlist();
 '{xemacs-packages-extra-info}' = nlist();
+'{nedit}'       ?= nlist();

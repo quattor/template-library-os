@@ -6,6 +6,7 @@ prefix '/software/packages';
 '{xterm}'          ?= nlist();
 '{xorg-x11-xauth}' ?= nlist();
 '{dbus-x11}' ?= nlist();
+'{libXScrnSaver}' ?= nlist();
 
 # Libreoffice
 '{libreoffice}'             ?= nlist();

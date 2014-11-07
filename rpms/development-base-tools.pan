@@ -32,8 +32,14 @@ prefix '/software/packages';
 '{libcanberra-gtk2}' ?= nlist();
 '{libXi-devel}' ?= nlist();
 
+# Openmpi
+'{openmpi}' ?= nlist();
+
 # Perl
 '{perl-SVN-Notify}' ?= nlist();
+
+# Python
+'{python-devel}' ?= nlist();
 
 # XML
 '{expat-devel}' ?= nlist();
