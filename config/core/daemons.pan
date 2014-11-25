@@ -25,18 +25,18 @@ variable OS_UNWANTED_DEFAULT_DAEMONS ?= {
   append('ipsec');
   append('iscsid');
   append('isdn');
-  append('jexec'); 
+  append('jexec');
   append('kdump');
   append('NetworkManager');
   append('pcscd');
   append('postfix');
   append('portreserve');
   append('pppoe-server');
-  append('rhsmcertd'); 
+  append('rhsmcertd');
   append('stap-server');
   append('tog-pegasus');
   append('wpa_supplicant');
-  append('yum'); 
+  append('yum');
   append('yum-cron');
   append('yum-updatesd');
   if ( OS_CORE_ONLY || ! OS_CORE_ISCSI_ENABLED ) {
