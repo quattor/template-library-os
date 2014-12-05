@@ -6,7 +6,7 @@ prefix '/software/packages';
 
 variable OS_CORE_INSTALL_SL_REPOS ?= false;
 
-# Mandatory Packages 
+# Mandatory Packages
 '{SysVinit}' = nlist();
 '{authconfig}' = nlist();
 '{basesystem}' = nlist();
