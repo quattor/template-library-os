@@ -17,6 +17,7 @@ prefix '/software/packages';
 '{perl-JSON-Any}' = nlist();
 '{perl-Config-Properties}' = nlist();
 '{perl-Config-Tiny}' = nlist();
+'{perl-File-Copy-Recursive}' = nlist();
 
 '{rpmdevtools}' = nlist();
 
