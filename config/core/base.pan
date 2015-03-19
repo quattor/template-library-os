@@ -16,6 +16,7 @@ variable SITE_ADDITIONAL_PACKAGES ?= undef;
 # Default if not properly defined elsewhere, using the standard mechanism
 variable OS_VERSION_PARAMS ?= nlist(
     "distribution", "sl",
+    "family",       "el",
     "major", "sl5",
     "majorversion", "5",
     "minor", "x",
