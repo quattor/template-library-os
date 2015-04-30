@@ -17,8 +17,12 @@ include { if ( ! OS_CORE_ONLY ) 'rpms/management-utils' };
 
 # Additional packages
 '/software/packages' = {
-  if ( ! OS_CORE_ONLY && OS_CORE_ISCSI_ENABLED ) {
-    SELF[escape('iscsi-initiator-utils')] = nlist();
+  if ( ! OS_CORE_ONLY ) {
+      pkg_repl('ntp');
+      pkg_repl('ntpdate');
+    if ( OS_CORE_ISCSI_ENABLED ) {
+      pkg_repl('iscsi-initiator-utils');
+    };
   };
   SELF;
 };
