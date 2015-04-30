@@ -24,6 +24,15 @@ variable OS_VERSION_PARAMS ?= nlist(
     "arch",         "x86_64"
 );
 
+@{
+desc = Define the base name used for OS-related YUM repositories
+values = string
+default = centos7
+required = no
+}
+
+variable YUM_OS_DISTRIBUTION_NAME ?= 'centos7';
+
 variable RPM_BASE_FLAVOUR = '7';
 variable RPM_BASE_FLAVOUR_VERSIONID = 7;
 variable RPM_BASE_FLAVOUR_NAME = format('el%s',RPM_BASE_FLAVOUR_VERSIONID);
