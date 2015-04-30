@@ -55,6 +55,9 @@ include { 'config/core/boot'};
 variable DEBUG = debug(format('%s: OS_BASE_CONFIGURE_NETWORK=%s',OBJECT,to_string(OS_BASE_CONFIGURE_NETWORK)));
 include { if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config' };
 
+# Use ncm-systemd instead of ncm-chkconfig to process ncm-chkconfig configuration
+include 'components/systemd/legacy/chkconfig';
+
 # Local site OS configuration
 variable DEBUG = debug(format('%s: OS_BASE_CONFIG_SITE=%s',OBJECT,to_string(OS_BASE_CONFIG_SITE)));
 include { OS_BASE_CONFIG_SITE };
