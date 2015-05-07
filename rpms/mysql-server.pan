@@ -1,5 +1,3 @@
 unique template rpms/mysql-server;
 
-prefix '/software/packages';
-
-'{mysql-server}' ?= nlist();
+'/software/packages' = pkg_repl('mariadb-server');

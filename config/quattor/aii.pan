@@ -12,7 +12,11 @@ variable AII_OSINSTALL_OPTION_LANG_SUPP = list("none");
 variable AII_OSINSTALL_OPTION_ZEROMBR_ARGS = list('');
 variable AII_OSINSTALL_NEEDS_SECTION_END = true;
 
-variable AII_OSINSTALL_OS_VERSION ?= OS_VERSION_PARAMS['version'] + '-' + OS_VERSION_PARAMS['arch'];
+variable AII_OSINSTALL_OS_VERSION ?= if ( is_defined(YUM_OS_DISTRIBUTION_NAME) ) {
+                                       YUM_OS_DISTRIBUTION_NAME + '-' + OS_VERSION_PARAMS['arch'];
+                                     } else {
+                                       OS_VERSION_PARAMS['version'] + '-' + OS_VERSION_PARAMS['arch'];
+                                     };
 
 # Include base configuration for AII
 

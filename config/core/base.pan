@@ -24,6 +24,15 @@ variable OS_VERSION_PARAMS ?= nlist(
     "arch",         "x86_64"
 );
 
+@{
+desc = Define the base name used for OS-related YUM repositories
+values = string
+default = centos7
+required = no
+}
+
+variable YUM_OS_DISTRIBUTION_NAME ?= 'centos7';
+
 variable RPM_BASE_FLAVOUR = '7';
 variable RPM_BASE_FLAVOUR_VERSIONID = 7;
 variable RPM_BASE_FLAVOUR_NAME = format('el%s',RPM_BASE_FLAVOUR_VERSIONID);
@@ -54,6 +63,9 @@ include { 'config/core/boot'};
 # Configure network, except if disabled
 variable DEBUG = debug(format('%s: OS_BASE_CONFIGURE_NETWORK=%s',OBJECT,to_string(OS_BASE_CONFIGURE_NETWORK)));
 include { if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config' };
+
+# Use ncm-systemd instead of ncm-chkconfig to process ncm-chkconfig configuration
+include 'components/systemd/legacy/chkconfig';
 
 # Local site OS configuration
 variable DEBUG = debug(format('%s: OS_BASE_CONFIG_SITE=%s',OBJECT,to_string(OS_BASE_CONFIG_SITE)));

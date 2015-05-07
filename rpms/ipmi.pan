@@ -1,7 +1,5 @@
 unique template rpms/ipmi;
 
-include { 'rpms/group/core' };
-
 prefix '/software/packages';
 
 '{OpenIPMI}'?=nlist();

@@ -1,7 +1,5 @@
 unique template rpms/web_server;
 
-include { 'rpms/group/core' };
-
 prefix '/software/packages';
 
 
