@@ -36,7 +36,7 @@ variable KERNEL_FIRMWARE_ARCH ?= "noarch";
 #
 # Kernel version and CPU architecture
 #
-include { 'os/kernel_version_arch' };
+include 'os/kernel_version_arch';
 
 # Default architecture to use for packages, if several architectures are
 # supported for a service.
@@ -45,20 +45,20 @@ include { 'os/kernel_version_arch' };
 variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
 
 # Minimum list of packages
-include {'rpms/group/core' };
-include { if ( ! OS_CORE_ONLY ) 'rpms/group/base' };
-include { if ( ! OS_CORE_ONLY ) 'rpms/management-utils' };
-include { if ( is_defined(SITE_ADDITIONAL_PACKAGES) ) if_exists(SITE_ADDITIONAL_PACKAGES) };
+include 'rpms/group/core';
+include if ( ! OS_CORE_ONLY ) 'rpms/group/base';
+include if ( ! OS_CORE_ONLY ) 'rpms/management-utils';
+include if ( is_defined(SITE_ADDITIONAL_PACKAGES) ) if_exists(SITE_ADDITIONAL_PACKAGES);
 
 # core extras
-include {'config/core/daemons'};
-include { 'config/core/boot'};
+include 'config/core/daemons';
+include 'config/core/boot';
 
 # Configure network, except if disabled
 variable DEBUG = debug(format('%s: OS_BASE_CONFIGURE_NETWORK=%s',OBJECT,to_string(OS_BASE_CONFIGURE_NETWORK)));
-include { if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config' };
+include if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config';
 
 # Local site OS configuration
 variable DEBUG = debug(format('%s: OS_BASE_CONFIG_SITE=%s',OBJECT,to_string(OS_BASE_CONFIG_SITE)));
-include { OS_BASE_CONFIG_SITE };
+include OS_BASE_CONFIG_SITE;
 

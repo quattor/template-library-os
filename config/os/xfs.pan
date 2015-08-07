@@ -1,3 +1,3 @@
 unique template config/os/xfs;
 
-include { 'rpms/xfs' };
+include 'rpms/xfs';

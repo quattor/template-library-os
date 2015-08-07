@@ -16,7 +16,7 @@ variable AII_OSINSTALL_OS_VERSION ?= OS_VERSION_PARAMS['version'] + '-' + OS_VER
 
 # Include base configuration for AII
 
-include { 'quattor/aii/config' };
+include 'quattor/aii/config';
 
 "/system/aii/osinstall/ks/mouse" = null;
 
