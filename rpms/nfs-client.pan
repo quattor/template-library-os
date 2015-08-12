@@ -1,6 +1,6 @@
 unique template rpms/nfs-client;
 
-include { 'rpms/group/core' };
+include 'rpms/group/core';
 
 prefix '/software/packages';
 
