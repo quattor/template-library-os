@@ -33,6 +33,7 @@ prefix '/software/packages';
 
 # Python
 '{python-devel}' ?= nlist();
+'{python-pip}' ?= nlist();
 
 # XML
 '{expat-devel}' ?= nlist();
