@@ -26,6 +26,12 @@ variable OS_CORE_RDMA_ENABLED ?= false;
 # Additional packages
 
 '/software/packages' = {
+  # Add kernel RPM explicitly to ensure that it is part of the configuration as it is
+  # not a dependency for any package in YUM group core.
+  # Without it, there is the risk that the initial kernel will never been upgraded as
+  # ncm-spma will keep trying removing all kernels and only the running one will be kept.
+  pkg_repl('kernel');
+
   # grub2 doesn't seem to be part of core or base group...
   pkg_repl('grub2');
 
