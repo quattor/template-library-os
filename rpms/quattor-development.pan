@@ -18,6 +18,9 @@ prefix '/software/packages';
 '{perl-Config-Properties}' = nlist();
 '{perl-Config-Tiny}' = nlist();
 '{perl-File-Copy-Recursive}' = nlist();
+'{perl-CDB_File}' = nlist();
+'{perl-Taint-Runtime}' = nlist();
+'{perl-enum}' = nlist();
 
 '{rpmdevtools}' = nlist();
 
