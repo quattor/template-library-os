@@ -67,6 +67,32 @@ include { if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config' };
 # Use ncm-systemd instead of ncm-chkconfig to process ncm-chkconfig configuration
 include 'components/systemd/legacy/chkconfig';
 
+# Ensure that some users new in EL7 and critical in 7.2+ are preserved whatever is the
+# ncm-accounts default list (correct since 16.2).
+# Users and groups are those added by systemd and polkit RPMs
+include 'components/accounts/config';
+prefix '/software/components/accounts';
+'kept_users/chrony' = '';
+'kept_users/libstoragemgmt' = '';
+'kept_users/polkitd' = '';
+'kept_users/ssh_keys' = '';
+'kept_users/systemd-bus-proxy' = '';
+'kept_users/systemd-network' = '';
+'kept_users/unbound' = '';
+'kept_groups/libstoragemgmt' = '';
+'kept_groups/polkitd' = '';
+'kept_groups/ssh_keys' = '';
+'kept_groups/cdrom' = '';
+'kept_groups/chrony' = '';
+'kept_groups/dialout' = '';
+'kept_groups/floppy' = '';
+'kept_groups/systemd-bus-proxy' = '';
+'kept_groups/systemd-journal' = '';
+'kept_groups/systemd-network' = '';
+'kept_groups/tape' = '';
+'kept_groups/unbound' = '';
+'kept_groups/utmp' = '';
+
 # Local site OS configuration
 variable DEBUG = debug(format('%s: OS_BASE_CONFIG_SITE=%s',OBJECT,to_string(OS_BASE_CONFIG_SITE)));
 include { OS_BASE_CONFIG_SITE };
