@@ -15,7 +15,7 @@ variable AII_OSINSTALL_NEEDS_SECTION_END = true;
 variable AII_OSINSTALL_OS_VERSION ?= if ( is_defined(YUM_OS_DISTRIBUTION_NAME) ) {
                                        YUM_OS_DISTRIBUTION_NAME + '-' + OS_VERSION_PARAMS['arch'];
                                      } else {
-                                       OS_VERSION_PARAMS['version'] + '-' + OS_VERSION_PARAMS['arch'];
+                                       error("YUM_OS_DISTRIBUTION_NAME undefined: cannot determine OS installer version to use");
                                      };
 
 # Include base configuration for AII

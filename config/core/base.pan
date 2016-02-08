@@ -24,18 +24,36 @@ variable OS_VERSION_PARAMS ?= nlist(
     "arch",         "x86_64"
 );
 
-@{
-desc = Define the base name used for OS-related YUM repositories
-values = string
-default = centos7
-required = no
-}
-
-variable YUM_OS_DISTRIBUTION_NAME ?= 'centos7';
-
 variable RPM_BASE_FLAVOUR = '7';
 variable RPM_BASE_FLAVOUR_VERSIONID = 7;
 variable RPM_BASE_FLAVOUR_NAME = format('el%s',RPM_BASE_FLAVOUR_VERSIONID);
+
+
+@{
+desc = Define the base name used for OS-related YUM repositories.
+values = dict of string, each entry being either a host name or a OS major version (e.g. el7). \
+ The value is used as the name part of the YUM repository name (before the first '-').
+default = none
+required = yes
+}
+variable YUM_OS_DISTRIBUTION ?= dict();
+
+
+@{
+desc = Define the base name used for OS-related YUM repositories.
+values = string whose value is used as the name part of the YUM repository name (before the first '-').
+default = based on YUM_OS_DISTRIBUTION contents
+required = no
+}
+variable YUM_OS_DISTRIBUTION_NAME ?= {
+  if ( is_defined(YUM_OS_DISTRIBUTION[OBJECT]) ) {
+    YUM_OS_DISTRIBUTION[OBJECT];
+  } else if ( is_defined(YUM_OS_DISTRIBUTION[OS_VERSION_PARAMS['major']]) ) {
+    YUM_OS_DISTRIBUTION[OS_VERSION_PARAMS['major']];
+  } else {
+    error("YUM_OS_DISTRIBUTION not defined: cannot determine OS distribution (YUM repository) to use");
+  };
+};
 
 
 variable OS_BASE_CONFIG_SITE ?= null;
