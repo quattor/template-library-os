@@ -23,7 +23,6 @@ variable OS_UNWANTED_DEFAULT_DAEMONS ?= {
   append('gpm');
   append('haldaemon');
   append('ipsec');
-  append('iscsid');
   append('isdn');
   append('jexec');
   append('kdump');
