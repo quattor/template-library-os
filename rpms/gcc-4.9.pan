@@ -1,5 +1,3 @@
 unique template rpms/gcc-4.9;
 
-prefix '/software/packages';
-
-'{devtoolset-3-toolchain}' = nlist ();
+'/software/packages' = pkg_repl('devtoolset-3-toolchain');

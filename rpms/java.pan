@@ -8,7 +8,8 @@ variable JAVA_DEVEL_ENABLED ?= true;
   } else {
     java_variant = '';
   };
-  SELF[escape('java-1.7.0-openjdk'+java_variant)] = nlist();
-  SELF[escape('java-1.6.0-openjdk'+java_variant)] = nlist();
+  pkg_repl('java-1.6.0-openjdk'+java_variant);
+  pkg_repl('java-1.7.0-openjdk'+java_variant);
+  pkg_repl('java-1.8.0-openjdk'+java_variant);
   SELF;
 };
