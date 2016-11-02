@@ -21,6 +21,7 @@ unique template rpms/quattor-development;
   pkg_repl('perl-CDB_File');
   pkg_repl('perl-Taint-Runtime');
   pkg_repl('perl-enum');
+  pkg_repl('perl-XML-Simple');
 
   pkg_repl('rpmdevtools');
 
