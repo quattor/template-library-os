@@ -7,7 +7,7 @@ unique template config/core/iptables-services;
   SELF;
 };
 
-# Disable firewalld
+# Disable and mask firewalld
 prefix '/software/components/systemd/unit/firewalld';
 'state' = 'masked';
 'startstop' = true;

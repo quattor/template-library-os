@@ -64,6 +64,22 @@ required = no
 variable OS_USE_IPTABLES_SERVICES ?= false;
 
 
+@{
+desc = disable firewalld service
+value = true, false or undef/null
+default = true if OS_USE_IPTABLES_SERVICES=true else undef (nothing done)
+required = no
+}
+variable OS_DISABLE_FIREWALLD ?= if ( OS_USE_IPTABLES_SERVICES ) {
+                                   true;
+                                 } else {
+                                   undef;
+                                 };
+variable ERROR = if ( OS_USE_IPTABLES_SERVICES && is_defined(OS_DISABLE_FIREWALLD) && !OS_DISABLE_FIREWALLD ) {
+                   error('OS_DISABLE_FIREWALLD should not be set to true when OS_USE_IPTABLES_SERVICES is true');
+                 };
+
+
 variable OS_BASE_CONFIG_SITE ?= null;
 
 variable KERNEL_FIRMWARE_ARCH ?= "noarch";
@@ -90,8 +106,13 @@ include 'config/core/boot';
 variable DEBUG = debug(format('%s: OS_BASE_CONFIGURE_NETWORK=%s',OBJECT,to_string(OS_BASE_CONFIGURE_NETWORK)));
 include if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config';
 
-# Install/enable iptables services if needed
-include if ( OS_USE_IPTABLES_SERVICES ) 'config/core/iptables-services';
+# Install/enable iptables services if needed or enable/disable firewalld according to OS_DISABLE_FIREWALLD
+include if ( OS_USE_IPTABLES_SERVICES ) {
+          'config/core/iptables-services';
+        } else if ( is_defined(OS_DISABLE_FIREWALLD) ) {
+          'config/core/firewalld';
+        };
+
 
 # Use ncm-systemd instead of ncm-chkconfig to process ncm-chkconfig configuration
 include 'components/systemd/legacy/chkconfig';
