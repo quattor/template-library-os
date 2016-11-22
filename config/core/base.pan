@@ -55,6 +55,30 @@ variable YUM_OS_DISTRIBUTION_NAME ?= {
   };
 };
 
+@{
+desc = use iptables and ip6tables services instead of firewalld
+value = true or false
+default = false (EL7 default is to use firewalld)
+required = no
+}
+variable OS_USE_IPTABLES_SERVICES ?= false;
+
+
+@{
+desc = disable firewalld service
+value = true, false or undef/null
+default = true if OS_USE_IPTABLES_SERVICES=true else undef (nothing done)
+required = no
+}
+variable OS_DISABLE_FIREWALLD ?= if ( OS_USE_IPTABLES_SERVICES ) {
+                                   true;
+                                 } else {
+                                   undef;
+                                 };
+variable ERROR = if ( OS_USE_IPTABLES_SERVICES && is_defined(OS_DISABLE_FIREWALLD) && !OS_DISABLE_FIREWALLD ) {
+                   error('OS_DISABLE_FIREWALLD should not be set to true when OS_USE_IPTABLES_SERVICES is true');
+                 };
+
 
 variable OS_BASE_CONFIG_SITE ?= null;
 
@@ -62,7 +86,7 @@ variable KERNEL_FIRMWARE_ARCH ?= "noarch";
 #
 # Kernel version and CPU architecture
 #
-include { 'os/kernel_version_arch' };
+include 'os/kernel_version_arch';
 
 # Default architecture to use for packages, if several architectures are
 # supported for a service.
@@ -71,16 +95,24 @@ include { 'os/kernel_version_arch' };
 variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
 
 # Minimum list of packages
-include {'rpms/base' };
-include { if ( is_defined(SITE_ADDITIONAL_PACKAGES) ) if_exists(SITE_ADDITIONAL_PACKAGES) };
+include 'rpms/base';
+include if ( is_defined(SITE_ADDITIONAL_PACKAGES) ) if_exists(SITE_ADDITIONAL_PACKAGES);
 
 # core extras
-include {'config/core/daemons'};
-include { 'config/core/boot'};
+include 'config/core/daemons';
+include 'config/core/boot';
 
 # Configure network, except if disabled
 variable DEBUG = debug(format('%s: OS_BASE_CONFIGURE_NETWORK=%s',OBJECT,to_string(OS_BASE_CONFIGURE_NETWORK)));
-include { if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config' };
+include if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config';
+
+# Install/enable iptables services if needed or enable/disable firewalld according to OS_DISABLE_FIREWALLD
+include if ( OS_USE_IPTABLES_SERVICES ) {
+          'config/core/iptables-services';
+        } else if ( is_defined(OS_DISABLE_FIREWALLD) ) {
+          'config/core/firewalld';
+        };
+
 
 # Use ncm-systemd instead of ncm-chkconfig to process ncm-chkconfig configuration
 include 'components/systemd/legacy/chkconfig';
@@ -90,6 +122,7 @@ include 'components/systemd/legacy/chkconfig';
 # Users and groups are those added by systemd and polkit RPMs
 include 'components/accounts/config';
 prefix '/software/components/accounts';
+'kept_users/centos' = '';
 'kept_users/chrony' = '';
 'kept_users/libstoragemgmt' = '';
 'kept_users/polkitd' = '';
@@ -97,21 +130,25 @@ prefix '/software/components/accounts';
 'kept_users/systemd-bus-proxy' = '';
 'kept_users/systemd-network' = '';
 'kept_users/unbound' = '';
+'kept_groups/centos' = '';
 'kept_groups/libstoragemgmt' = '';
 'kept_groups/polkitd' = '';
 'kept_groups/ssh_keys' = '';
 'kept_groups/cdrom' = '';
+'kept_groups/cgred' = '';
 'kept_groups/chrony' = '';
 'kept_groups/dialout' = '';
 'kept_groups/floppy' = '';
+'kept_groups/input' = '';
 'kept_groups/systemd-bus-proxy' = '';
 'kept_groups/systemd-journal' = '';
 'kept_groups/systemd-network' = '';
 'kept_groups/tape' = '';
 'kept_groups/unbound' = '';
 'kept_groups/utmp' = '';
+'kept_groups/wireshark' = '';
 
 # Local site OS configuration
 variable DEBUG = debug(format('%s: OS_BASE_CONFIG_SITE=%s',OBJECT,to_string(OS_BASE_CONFIG_SITE)));
-include { OS_BASE_CONFIG_SITE };
+include OS_BASE_CONFIG_SITE;
 
