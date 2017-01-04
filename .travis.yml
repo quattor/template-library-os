@@ -1,5 +1,6 @@
 language: bash
 
-script: ./travis-build
+script:
+  - ./.travis-scripts/test-library
 
 sudo: false
