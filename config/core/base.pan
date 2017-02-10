@@ -65,18 +65,18 @@ variable OS_USE_IPTABLES_SERVICES ?= false;
 
 
 @{
-desc = disable firewalld service
+desc = enable firewalld service
 value = true, false or undef/null
-default = true if OS_USE_IPTABLES_SERVICES=true else undef (nothing done)
+default = false if OS_USE_IPTABLES_SERVICES=true else undef (nothing done)
 required = no
 }
-variable OS_DISABLE_FIREWALLD ?= if ( OS_USE_IPTABLES_SERVICES ) {
-                                   true;
+variable OS_ENABLE_FIREWALLD ?= if ( OS_USE_IPTABLES_SERVICES ) {
+                                   false;
                                  } else {
                                    undef;
                                  };
-variable ERROR = if ( OS_USE_IPTABLES_SERVICES && is_defined(OS_DISABLE_FIREWALLD) && !OS_DISABLE_FIREWALLD ) {
-                   error('OS_DISABLE_FIREWALLD should not be set to true when OS_USE_IPTABLES_SERVICES is true');
+variable ERROR = if ( OS_USE_IPTABLES_SERVICES && is_defined(OS_ENABLE_FIREWALLD) && OS_ENABLE_FIREWALLD ) {
+                   error('OS_ENABLE_FIREWALLD should not be set to true when OS_USE_IPTABLES_SERVICES is true');
                  };
 
 
@@ -109,7 +109,7 @@ include if ( OS_BASE_CONFIGURE_NETWORK ) 'os/network/config';
 # Install/enable iptables services if needed or enable/disable firewalld according to OS_DISABLE_FIREWALLD
 include if ( OS_USE_IPTABLES_SERVICES ) {
           'config/core/iptables-services';
-        } else if ( is_defined(OS_DISABLE_FIREWALLD) ) {
+        } else if ( is_defined(OS_ENABLE_FIREWALLD) ) {
           'config/core/firewalld';
         };
 
