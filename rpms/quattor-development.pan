@@ -24,6 +24,7 @@ unique template rpms/quattor-development;
   pkg_repl('perl-XML-Simple');
   pkg_repl('perl-Module-Load');
   pkg_repl('perl-Perl-Critic');
+  pkg_repl('perl-Parallel-ForkManager');
 
   pkg_repl('rpmdevtools');
 
