@@ -3,6 +3,7 @@ unique template rpms/quattor-development;
 '/software/packages' = {
   pkg_repl('perl-Template-Toolkit');
   pkg_repl('perl-Text-Autoformat');
+  pkg_repl('perl-Text-Diff');
   pkg_repl('perl-Text-Glob');
   pkg_repl('perl-Pod-POM');
   pkg_repl('perl-Test-Deep');
@@ -22,6 +23,9 @@ unique template rpms/quattor-development;
   pkg_repl('perl-Taint-Runtime');
   pkg_repl('perl-enum');
   pkg_repl('perl-XML-Simple');
+  pkg_repl('perl-Module-Load');
+  pkg_repl('perl-Perl-Critic');
+  pkg_repl('perl-Parallel-ForkManager');
 
   pkg_repl('rpmdevtools');
 
