@@ -1,7 +1,6 @@
 @{
-    Template listing boot options for all SL6 nodes.
+    Template listing boot options for all EL7 hosts.
 }
 
 unique template config/core/boot;
 
-"/software/components/grub/args" = "crashkernel=128M@16M nohz=off";
