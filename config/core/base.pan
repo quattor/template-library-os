@@ -114,8 +114,26 @@ include if ( OS_USE_IPTABLES_SERVICES ) {
         };
 
 
+@{
+desc = if true, the microcode_ctl package will be installed
+value = boolean
+default = false
+required = no
+}
+variable OS_USE_MICROCODE_CTL ?= false;
+
+
 # Use ncm-systemd instead of ncm-chkconfig to process ncm-chkconfig configuration
 include 'components/systemd/legacy/chkconfig';
+
+# Install microcode_ctl package if needed
+'/software/packages' = {
+    if (OS_USE_MICROCODE_CTL) {
+        pkg_repl('microcode_ctl');
+    } else {
+        SELF;
+    }
+};
 
 # Ensure that some users new in EL7 and critical in 7.2+ are preserved whatever is the
 # ncm-accounts default list (correct since 16.2).
