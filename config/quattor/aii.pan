@@ -5,7 +5,7 @@
 # OS templates is easier in case some particular tweakening is required
 # for an OS version.
 
-template config/quattor/aii;
+unique template config/quattor/aii;
 
 ## disable
 variable AII_OSINSTALL_OPTION_LANG_SUPP = list("none");
