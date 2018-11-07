@@ -1,44 +1,45 @@
 unique template rpms/interactive-server;
 
-prefix '/software/packages';
+'/software/packages' = {
+    # X-system
+    pkg_repl('xterm');
+    pkg_repl('xorg-x11-xauth');
+    pkg_repl('dbus-x11');
+    pkg_repl('libXScrnSaver');
 
-# X-system
-'{xterm}'          ?= nlist();
-'{xorg-x11-xauth}' ?= nlist();
-'{dbus-x11}' ?= nlist();
-'{libXScrnSaver}' ?= nlist();
+    # Libreoffice
+    pkg_repl('libreoffice');
+    pkg_repl('libreoffice-langpack-fr');
+    pkg_repl('libreoffice-langpack-en');
 
-# Libreoffice
-'{libreoffice}'             ?= nlist();
-'{libreoffice-langpack-fr}' ?= nlist();
-'{libreoffice-langpack-en}' ?= nlist();
+    # Graphics
+    pkg_repl('gnuplot');
+    pkg_repl('plplot');
+    pkg_repl('xfig');
+    pkg_repl('gimp');
 
-# Graphics
-'{gnuplot}' ?= nlist();
-'{plplot}'  ?= nlist();
-'{xfig}'    ?= nlist();
-'{gimp}'    ?= nlist();
+    # Maxima
+    pkg_repl('maxima-gui');
 
-# Maxima
-'{maxima-gui}' ?= nlist();
+    # Mail
+    pkg_repl('mutt');
 
-# Mail
-'{mutt}' ?= nlist();
+    # Network tools
+    pkg_repl('telnet');
+    pkg_repl('ftp');
+    pkg_repl('lftp');
+    pkg_repl('nc');
+    pkg_repl('wireshark');
+    pkg_repl('wireshark-gnome');
+    pkg_repl('tigervnc');
 
-# Network tools
-'{telnet}'          ?= nlist();
-'{ftp}'             ?= nlist();
-'{lftp}'            ?= nlist();
-'{nc}'              ?= nlist();
-'{wireshark}'       ?= nlist();
-'{wireshark-gnome}' ?= nlist();
-'{rdesktop}'        ?= nlist();
-'{tigervnc}'        ?= nlist();
+    # DB
+    pkg_repl('mysql');
+    pkg_repl('postgresql');
 
-# DB
-'{mysql}' ?= nlist();
-'{postgresql}' ?= nlist();
+    # Ghostview
+    pkg_repl('gv');
 
-# Ghostview
-'{gv}' ?= nlist();
+    SELF;
+};
 

@@ -4,37 +4,38 @@ unique template rpms/development-base-tools;
 
 include { 'rpms/group/development' };
 
-prefix '/software/packages';
+'/software/packages' = {
+    # Cmake
+    pkg_repl('cmake');
 
-# Git
-'{git}' ?= nlist();
+    # Git
+    pkg_repl('git');
 
-# Mercurial
-'{mercurial-hgk}'   ?= nlist();
+    # Mercurial
+    pkg_repl('mercurial-hgk');
 
-# Doxygen
-'{doxygen}' ?= nlist();
+    # Doxygen
+    pkg_repl('doxygen');
 
-# Docbook
-'{docbook-utils}' ?= nlist();
+    # Docbook
+    pkg_repl('docbook-utils');
 
-# DB
-'{mysql-devel}' ?= nlist();
+    # DB
+    pkg_repl('mysql-devel');
 
-# Graphic
-'{libcanberra-gtk2}' ?= nlist();
-'{libXi-devel}' ?= nlist();
+    # Graphic
+    pkg_repl('libcanberra-gtk2');
+    pkg_repl('libXi-devel');
 
-# Openmpi
-'{openmpi}' ?= nlist();
+    # Openmpi
+    pkg_repl('openmpi');
 
-# Perl
-'{perl-SVN-Notify}' ?= nlist();
+    # Python
+    pkg_repl('python-devel');
+    pkg_repl('python-pip');
 
-# Python
-'{python-devel}' ?= nlist();
-'{python-pip}' ?= nlist();
+    # XML
+    pkg_repl('expat-devel');
 
-# XML
-'{expat-devel}' ?= nlist();
-
+    SELF;
+};

@@ -26,6 +26,7 @@ unique template rpms/quattor-development;
   pkg_repl('perl-Module-Load');
   pkg_repl('perl-Perl-Critic');
   pkg_repl('perl-Parallel-ForkManager');
+  pkg_repl('perl-File-AtomicWrite');
 
   pkg_repl('rpmdevtools');
 
