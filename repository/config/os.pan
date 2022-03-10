@@ -22,8 +22,7 @@ required = no
 }
 variable REPOSITORY_CENTOS_EXTRAS_ENABLED ?= false;
 
-variable YUM_SNAPSHOT_NS ?= 'repository/snapshot';
-variable YUM_OS_SNAPSHOT_NS ?= YUM_SNAPSHOT_NS;
+variable YUM_OS_SNAPSHOT_NS ?= error('YUM_OS_SNAPSHOT_NS should already have been defined');
 
 @{
 desc =  list of repository to load specified as a list of templates describing the repositories
@@ -33,7 +32,7 @@ required = no
 }
 include { 'repository/config/quattor' };
 variable OS_REPOSITORY_LIST ?= {
-    append(OS_VERSION_PARAMS['major']+'_'+'baseos');
+    append(BASE_OS_REPOSITORY_TEMPLATE);
     append(OS_VERSION_PARAMS['major']+'_'+'appstream');
     append(OS_VERSION_PARAMS['major']+'_'+'powertools');
     if ( REPOSITORY_CENTOS_EXTRAS_ENABLED ) {
