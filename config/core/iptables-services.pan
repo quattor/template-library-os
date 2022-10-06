@@ -6,6 +6,8 @@ unique template config/core/iptables-services;
     SELF;
 };
 
+'/software/components/systemd/skip/service' = false;
+
 # Disable and mask firewalld
 prefix '/software/components/systemd/unit/firewalld';
 'state' = 'masked';
