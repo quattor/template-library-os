@@ -66,6 +66,23 @@ variable YUM_OS_DISTRIBUTION_NAME ?= {
 };
 
 @{
+desc = namespace to use for OS YUM snapshots, defined early to be usable in AII configuration
+value = pan namespace
+default = repository/snapshot
+required = no
+}
+variable YUM_SNAPSHOT_NS ?= 'repository/snapshot';
+variable YUM_OS_SNAPSHOT_NS ?= YUM_SNAPSHOT_NS;
+
+@{
+desc = name of the template used to configure the base OS repository
+value = template name
+default = OS_VERSION_PARAMS['major'] + '_baseos'
+required = non
+}
+variable BASE_OS_REPOSITORY_TEMPLATE ?= if ( !is_null(BASE_OS_REPOSITORY_TEMPLATE) ) format('%s_baseos', OS_VERSION_PARAMS['major']);
+
+@{
 desc = use iptables and ip6tables services instead of firewalld
 value = true or false
 default = false (EL8 default is to use firewalld)

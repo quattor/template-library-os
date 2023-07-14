@@ -17,6 +17,7 @@ variable AII_OSINSTALL_OS_VERSION ?= if ( is_defined(YUM_OS_DISTRIBUTION_NAME) )
                                      } else {
                                        error('YUM_OS_DISTRIBUTION_NAME undefined: cannot determine OS installer version to use');
                                      };
+variable TEST = debug(format('YUM_OS_DISTRIBUTION_NAME=%s, AII_OSINSTALL_OS_VERSION=%s', YUM_OS_DISTRIBUTION_NAME, AII_OSINSTALL_OS_VERSION));
 
 # Include base configuration for AII
 
