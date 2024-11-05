@@ -28,8 +28,6 @@ variable OS_CORE_RDMA_ENABLED ?= false;
     pkg_repl('mcelog');
     pkg_repl('microcode_ctl');
     pkg_repl('NetworkManager');
-    # network-scripts is required by ncm-network 21.4.0
-    pkg_repl('network-scripts');
     pkg_repl('net-tools');
     pkg_repl('openssh');
     pkg_repl('openssh-server');
