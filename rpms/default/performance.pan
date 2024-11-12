@@ -13,5 +13,4 @@ prefix '/software/packages';
 
 '{elfutils}' ?= dict();
 '{iotop}' ?= dict();
-'{perf}' ?= dict();
 '{strace}' ?= dict();

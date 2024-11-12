@@ -2,7 +2,7 @@
 # Template generated from OS' comps.xml - DO NOT EDIT
 #
 # Remote Management for Linux
-# Remote management interface for CentOS Linux.
+# Remote management interface for Rocky Linux.
 #
 # default packages
 #

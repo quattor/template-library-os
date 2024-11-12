@@ -2,7 +2,7 @@
 # Template generated from OS' comps.xml - DO NOT EDIT
 #
 # Core
-# Smallest possible installation
+# Minimal host installation
 #
 # optional packages
 #

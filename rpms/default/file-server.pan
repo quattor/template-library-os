@@ -4,10 +4,10 @@
 # File and Storage Server
 # CIFS, SMB, NFS, iSCSI, iSER, and iSNS network storage server.
 #
-# mandatory packages
+# default packages
 #
 
-unique template rpms/file-server;
+unique template rpms/default/file-server;
 
 prefix '/software/packages';
 

@@ -4,10 +4,10 @@
 # GNOME
 # GNOME is a highly intuitive and user-friendly desktop environment.
 #
-# mandatory packages
+# default packages
 #
 
-unique template rpms/gnome-desktop;
+unique template rpms/default/gnome-desktop;
 
 prefix '/software/packages';
 
@@ -15,4 +15,5 @@ prefix '/software/packages';
 '{NetworkManager-adsl}' ?= dict();
 '{avahi}' ?= dict();
 '{glib-networking}' ?= dict();
+'{glibc-all-langpacks}' ?= dict();
 '{polkit}' ?= dict();

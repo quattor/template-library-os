@@ -13,5 +13,4 @@ unique template rpms/optional/infiniband;
 
 prefix '/software/packages';
 
-'{opa-fm}' ?= dict();
 '{opensm}' ?= dict();

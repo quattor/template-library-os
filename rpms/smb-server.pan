@@ -13,4 +13,3 @@ unique template rpms/smb-server;
 prefix '/software/packages';
 
 '{samba}' ?= dict();
-'{samba-client}' ?= dict();

@@ -12,4 +12,3 @@ unique template rpms/optional/hardware-monitoring;
 prefix '/software/packages';
 
 '{intel-cmt-cat}' ?= dict();
-'{lm_sensors}' ?= dict();

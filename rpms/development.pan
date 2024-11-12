@@ -12,7 +12,6 @@ unique template rpms/development;
 prefix '/software/packages';
 
 '{binutils}' ?= dict();
-'{glibc-devel}' ?= dict();
 '{make}' ?= dict();
 '{pkgconf}' ?= dict();
 '{pkgconf-m4}' ?= dict();

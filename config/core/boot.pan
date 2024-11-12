@@ -1,5 +1,5 @@
 @{
-    Template listing boot options for all EL8 hosts.
+    Template listing boot options for all EL9 hosts.
 }
 
 unique template config/core/boot;
