@@ -2,7 +2,7 @@
 # Template generated from OS' comps.xml - DO NOT EDIT
 #
 # Standard
-# The standard installation of CentOS Linux.
+# The standard installation of Rocky Linux.
 #
 # mandatory packages
 #
@@ -15,17 +15,15 @@ prefix '/software/packages';
 '{at}' ?= dict();
 '{attr}' ?= dict();
 '{bc}' ?= dict();
-'{centos-release}' ?= dict();
-'{centos-release-eula}' ?= dict();
 '{cpio}' ?= dict();
 '{crontabs}' ?= dict();
 '{cyrus-sasl-plain}' ?= dict();
 '{dbus}' ?= dict();
 '{ed}' ?= dict();
 '{file}' ?= dict();
-'{iptstate}' ?= dict();
 '{irqbalance}' ?= dict();
 '{kpatch}' ?= dict();
+'{kpatch-dnf}' ?= dict();
 '{logrotate}' ?= dict();
 '{lsof}' ?= dict();
 '{mcelog}' ?= dict();
@@ -34,6 +32,7 @@ prefix '/software/packages';
 '{pciutils}' ?= dict();
 '{psacct}' ?= dict();
 '{quota}' ?= dict();
+'{rocky-release}' ?= dict();
 '{sudo}' ?= dict();
 '{symlinks}' ?= dict();
 '{systemd-udev}' ?= dict();

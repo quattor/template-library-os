@@ -4,11 +4,11 @@
 # Large Systems Performance
 # Performance support tools for large systems.
 #
-# default packages
+# optional packages
 #
 
-unique template rpms/default/large-systems;
+unique template rpms/optional/large-systems;
 
 prefix '/software/packages';
 
-'{hwloc}' ?= dict();
+'{numatop}' ?= dict();

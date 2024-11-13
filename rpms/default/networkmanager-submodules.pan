@@ -15,4 +15,4 @@ prefix '/software/packages';
 '{NetworkManager-bluetooth}' ?= dict();
 '{NetworkManager-wifi}' ?= dict();
 '{NetworkManager-wwan}' ?= dict();
-'{iptables}' ?= dict();
+'{iptables-nft}' ?= dict();

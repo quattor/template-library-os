@@ -2,7 +2,7 @@
 # Template generated from OS' comps.xml - DO NOT EDIT
 #
 # Base
-# The standard installation of CentOS Linux.
+# The standard installation of Rocky Linux.
 #
 # default packages
 #
@@ -12,7 +12,7 @@ unique template rpms/default/base;
 prefix '/software/packages';
 
 '{bash-completion}' ?= dict();
-'{blktrace}' ?= dict();
+'{bluez}' ?= dict();
 '{bpftool}' ?= dict();
 '{bzip2}' ?= dict();
 '{chrony}' ?= dict();
@@ -22,9 +22,9 @@ prefix '/software/packages';
 '{dosfstools}' ?= dict();
 '{ethtool}' ?= dict();
 '{gnupg2}' ?= dict();
+'{iprutils}' ?= dict();
 '{kmod-kvdo}' ?= dict();
 '{ledmon}' ?= dict();
-'{libstoragemgmt}' ?= dict();
 '{lvm2}' ?= dict();
 '{mailcap}' ?= dict();
 '{man-pages}' ?= dict();
@@ -32,8 +32,8 @@ prefix '/software/packages';
 '{mlocate}' ?= dict();
 '{mtr}' ?= dict();
 '{nano}' ?= dict();
+'{nvme-cli}' ?= dict();
 '{realmd}' ?= dict();
-'{rng-tools}' ?= dict();
 '{rsync}' ?= dict();
 '{smartmontools}' ?= dict();
 '{sos}' ?= dict();

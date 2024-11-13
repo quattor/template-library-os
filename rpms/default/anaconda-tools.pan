@@ -4,10 +4,10 @@
 # Anaconda tools
 #
 #
-# mandatory packages
+# default packages
 #
 
-unique template rpms/anaconda-tools;
+unique template rpms/default/anaconda-tools;
 
 prefix '/software/packages';
 
@@ -20,10 +20,7 @@ prefix '/software/packages';
 '{efibootmgr}' ?= dict();
 '{fcoe-utils}' ?= dict();
 '{firewalld}' ?= dict();
-'{gfs2-utils}' ?= dict();
 '{glibc-all-langpacks}' ?= dict();
-'{grub2-efi-ia32}' ?= dict();
-'{grub2-efi-ia32-cdboot}' ?= dict();
 '{grub2-efi-x64}' ?= dict();
 '{grub2-efi-x64-cdboot}' ?= dict();
 '{grub2-pc}' ?= dict();
@@ -34,7 +31,7 @@ prefix '/software/packages';
 '{lvm2}' ?= dict();
 '{mdadm}' ?= dict();
 '{realmd}' ?= dict();
-'{shim-ia32}' ?= dict();
+'{restore}' ?= dict();
 '{shim-x64}' ?= dict();
 '{syslinux-extlinux}' ?= dict();
 '{teamd}' ?= dict();

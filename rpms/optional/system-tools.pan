@@ -13,11 +13,14 @@ unique template rpms/optional/system-tools;
 
 prefix '/software/packages';
 
-'{arpwatch}' ?= dict();
 '{autofs}' ?= dict();
 '{chrpath}' ?= dict();
 '{environment-modules}' ?= dict();
 '{fuse}' ?= dict();
 '{hardlink}' ?= dict();
+'{initscripts}' ?= dict();
+'{initscripts-service}' ?= dict();
 '{iotop}' ?= dict();
 '{lzop}' ?= dict();
+'{netconsole-service}' ?= dict();
+'{readonly-root}' ?= dict();

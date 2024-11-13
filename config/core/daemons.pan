@@ -2,10 +2,11 @@
     Template listing daemons  that must be enabled or disabled in all SL6-based installations
 
 }
-
 unique template config/core/daemons;
 
 variable OS_CORE_POSTFIX ?= false;
+variable OS_CORE_ONLY ?= false;
+variable OS_CORE_ISCSI_ENABLED ?= false;
 
 variable OS_WANTED_DEFAULT_DAEMONS ?= {
     append('sshd');
@@ -17,7 +18,6 @@ variable OS_WANTED_DEFAULT_DAEMONS ?= {
 };
 
 variable OS_UNWANTED_DEFAULT_DAEMONS ?= {
-    append('abrt');
     append('avahi-daemon');
     append('bluetooth');
     append('cups');
@@ -38,9 +38,6 @@ variable OS_UNWANTED_DEFAULT_DAEMONS ?= {
     append('stap-server');
     append('tog-pegasus');
     append('wpa_supplicant');
-    append('yum');
-    append('yum-cron');
-    append('yum-updatesd');
     if ( OS_CORE_ONLY || ! OS_CORE_ISCSI_ENABLED ) {
         append('iscsi');
         append('iscsid');
@@ -48,12 +45,14 @@ variable OS_UNWANTED_DEFAULT_DAEMONS ?= {
     SELF;
 };
 
-'/software/components/systemd/unit/' = {
+include 'components/systemd/config';
+
+'/software/components/systemd/unit' = {
     foreach(k; v; OS_WANTED_DEFAULT_DAEMONS) {
         SELF[v]['state'] = 'enabled';
-	SELF[v]['startstop'] = true;
+        SELF[v]['startstop'] = true;
     };
-    foreach(k;v;OS_UNWANTED_DEFAULT_DAEMONS) {
+    foreach(k; v; OS_UNWANTED_DEFAULT_DAEMONS) {
         SELF[v]['state'] = 'disabled';
         SELF[v]['startstop'] = true;
     };

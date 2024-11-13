@@ -12,5 +12,4 @@ unique template rpms/default/hardware-monitoring;
 prefix '/software/packages';
 
 '{mcelog}' ?= dict();
-'{rasdaemon}' ?= dict();
 '{smartmontools}' ?= dict();

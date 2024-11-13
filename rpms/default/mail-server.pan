@@ -12,4 +12,3 @@ unique template rpms/default/mail-server;
 prefix '/software/packages';
 
 '{cyrus-sasl}' ?= dict();
-'{postfix}' ?= dict();

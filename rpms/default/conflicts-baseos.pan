@@ -5,10 +5,10 @@
 # This group includes packages conflicting with an everything installation
 # from the BaseOS repo
 #
-# mandatory packages
+# default packages
 #
 
-unique template rpms/conflicts-baseos;
+unique template rpms/default/conflicts-baseos;
 
 prefix '/software/packages';
 

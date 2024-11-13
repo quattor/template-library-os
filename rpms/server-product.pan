@@ -11,9 +11,7 @@ unique template rpms/server-product;
 
 prefix '/software/packages';
 
-'{centos-release}' ?= dict();
-'{centos-release-eula}' ?= dict();
 '{chrony}' ?= dict();
 '{polkit}' ?= dict();
 '{realmd}' ?= dict();
-'{timedatex}' ?= dict();
+'{rocky-release}' ?= dict();

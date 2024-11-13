@@ -1,9 +1,6 @@
 unique template rpms/base;
 
-variable OS_CORE_ONLY ?= false;
-variable OS_CORE_ISCSI_ENABLED ?= false;
-variable OS_CORE_RDMA_ENABLED ?= false;
-
+# Default value of all variables must be defined in config/core/base
 
 # Base packages
 '/software/packages' = {
@@ -28,8 +25,6 @@ variable OS_CORE_RDMA_ENABLED ?= false;
     pkg_repl('mcelog');
     pkg_repl('microcode_ctl');
     pkg_repl('NetworkManager');
-    # network-scripts is required by ncm-network 21.4.0
-    pkg_repl('network-scripts');
     pkg_repl('net-tools');
     pkg_repl('openssh');
     pkg_repl('openssh-server');
@@ -45,6 +40,16 @@ variable OS_CORE_RDMA_ENABLED ?= false;
     pkg_repl('vim');
     pkg_repl('wget');
 
+    if ( is_defined(OS_GLIBC_LANGPACKS) && !is_null(OS_GLIBC_LANGPACKS) ) {
+        if ( is_list(OS_GLIBC_LANGPACKS) ) {
+            foreach (i; langpack; OS_GLIBC_LANGPACKS) {
+                pkg_repl(format('glibc-%s', langpack));
+            };
+        } else {
+            error('OS_GLIBC_LANGPACKS must be a list');
+        };
+    };
+
     SELF;
 };
 
@@ -52,30 +57,46 @@ variable OS_CORE_RDMA_ENABLED ?= false;
 # Additional packages
 
 '/software/packages' = {
-  # Add kernel RPM explicitly to ensure that it is part of the configuration as it is
-  # not a dependency for any package in YUM group core.
-  # Without it, there is the risk that the initial kernel will never been upgraded as
-  # ncm-spma will keep trying removing all kernels and only the running one will be kept.
-  pkg_repl('kernel');
+    # Add kernel RPM explicitly to ensure that it is part of the configuration as it is
+    # not a dependency for any package in YUM group core.
+    # Without it, there is the risk that the initial kernel will never been upgraded as
+    # ncm-spma will keep trying removing all kernels and only the running one will be kept.
+    pkg_repl('kernel');
 
-  # grub2 doesn't seem to be part of core or base group...
-  pkg_repl('grub2');
-
-  # Some useful packages from core default packages
-  pkg_repl('dracut-config-rescue');
-  pkg_repl('kernel-tools');
-  pkg_repl('libsysfs');
-  pkg_repl('linux-firmware');
-  pkg_repl('postfix');
-  if ( OS_CORE_RDMA_ENABLED ) pkg_repl('rdma');
-
-  if ( ! OS_CORE_ONLY ) {
-      pkg_repl('chrony');
-    if ( OS_CORE_ISCSI_ENABLED ) {
-      pkg_repl('iscsi-initiator-utils');
+    # chkconfig: may still be required by some site-specific templates
+    if ( OS_INSTALL_CHKCONFIG ) {
+        # TODO: enable deprecation message when OS_INSTALL_CHKCONFIG is false (requires ncm-named
+        # and ncm-systemd changes)
+        #deprecated(0, "ncm-ckhkconfig is deprecated on EL9+ and must be replaced by ncm-systemd");
+        pkg_repl('chkconfig');
     };
-  };
-  SELF;
+
+    # TODO: should not be needed but kept until all sites have migrated
+    if ( OS_NETWORK_USE_INITSCRIPTS ) {
+        deprecated(0, "ncm-network initiscripts backend is not supported on EL9+");
+        pkg_repl('initscripts');
+        pkg_repl('NetworkManager-initscripts-updown');
+    };
+
+    # grub2 doesn't seem to be part of core or base group...
+    pkg_repl('grub2');
+
+    # Some useful packages from core default packages
+    pkg_repl('dracut-config-rescue');
+    pkg_repl('kernel-tools');
+    pkg_repl('libsysfs');
+    pkg_repl('linux-firmware');
+    pkg_repl('postfix');
+    if ( OS_CORE_RDMA_ENABLED ) pkg_repl('rdma');
+    if ( OS_CORE_SMARTD_ENABLED ) pkg_repl('smartmontools');
+
+    if ( ! OS_CORE_ONLY ) {
+        pkg_repl('chrony');
+        if ( OS_CORE_ISCSI_ENABLED ) {
+            pkg_repl('iscsi-initiator-utils');
+        };
+    };
+    SELF;
 };
 
-include { if ( ! OS_CORE_ONLY ) 'rpms/management-utils' };
+include if ( ! OS_CORE_ONLY ) 'rpms/management-utils';

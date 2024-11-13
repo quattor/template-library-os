@@ -16,8 +16,6 @@ prefix '/software/packages';
 '{chrony}' ?= dict();
 '{cifs-utils}' ?= dict();
 '{openldap-clients}' ?= dict();
-'{samba-client}' ?= dict();
 '{setserial}' ?= dict();
 '{tmux}' ?= dict();
-'{xdelta}' ?= dict();
 '{zsh}' ?= dict();

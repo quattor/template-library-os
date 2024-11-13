@@ -2,7 +2,7 @@
 # Template generated from OS' comps.xml - DO NOT EDIT
 #
 # Core
-# Smallest possible installation
+# Minimal host installation
 #
 # mandatory packages
 #
@@ -16,6 +16,8 @@ prefix '/software/packages';
 '{bash}' ?= dict();
 '{coreutils}' ?= dict();
 '{cronie}' ?= dict();
+'{crypto-policies}' ?= dict();
+'{crypto-policies-scripts}' ?= dict();
 '{curl}' ?= dict();
 '{dnf}' ?= dict();
 '{e2fsprogs}' ?= dict();
@@ -24,25 +26,26 @@ prefix '/software/packages';
 '{glibc}' ?= dict();
 '{grubby}' ?= dict();
 '{hostname}' ?= dict();
-'{initscripts}' ?= dict();
 '{iproute}' ?= dict();
-'{iprutils}' ?= dict();
+'{iproute-tc}' ?= dict();
 '{iputils}' ?= dict();
 '{irqbalance}' ?= dict();
 '{kbd}' ?= dict();
 '{kexec-tools}' ?= dict();
 '{less}' ?= dict();
+'{logrotate}' ?= dict();
 '{man-db}' ?= dict();
 '{ncurses}' ?= dict();
 '{openssh-clients}' ?= dict();
 '{openssh-server}' ?= dict();
+'{p11-kit}' ?= dict();
 '{parted}' ?= dict();
 '{passwd}' ?= dict();
 '{policycoreutils}' ?= dict();
 '{procps-ng}' ?= dict();
-'{rng-tools}' ?= dict();
 '{rootfiles}' ?= dict();
 '{rpm}' ?= dict();
+'{rpm-plugin-audit}' ?= dict();
 '{selinux-policy-targeted}' ?= dict();
 '{setup}' ?= dict();
 '{shadow-utils}' ?= dict();
@@ -50,7 +53,6 @@ prefix '/software/packages';
 '{sssd-kcm}' ?= dict();
 '{sudo}' ?= dict();
 '{systemd}' ?= dict();
-'{tuned}' ?= dict();
 '{util-linux}' ?= dict();
 '{vim-minimal}' ?= dict();
 '{xfsprogs}' ?= dict();
