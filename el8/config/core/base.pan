@@ -12,21 +12,11 @@ required = no
 variable OS_BASE_CONFIGURE_NETWORK ?= true;
 variable SITE_ADDITIONAL_PACKAGES ?= undef;
 
-# Default if not properly defined elsewhere, using the standard mechanism
-variable OS_VERSION_PARAMS ?= dict(
-    "distribution", "el",
-    "family", "el",
-    "major", "el8",
-    "majorversion", "8",
-    "minor", "x",
-    "flavour", "x",
-    "version", "el8x",
-    "arch", "x86_64",
-);
 
 variable RPM_BASE_FLAVOUR = '8';
+variable RPM_BASE_FLAVOUR_DISTRIBUTION = 'el';
 variable RPM_BASE_FLAVOUR_VERSIONID = 8;
-variable RPM_BASE_FLAVOUR_NAME = format('el%s', RPM_BASE_FLAVOUR_VERSIONID);
+variable RPM_BASE_FLAVOUR_NAME = RPM_BASE_FLAVOUR_DISTRIBUTION + RPM_BASE_FLAVOUR_VERSIONID;
 
 
 @{
@@ -124,6 +114,18 @@ include 'os/kernel_version_arch';
 # This variable can be overriden at a site level or in a profile to
 # force a specific architecture (e.g. i386 on 64-bit machine)
 variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
+
+# Default if not properly defined elsewhere, using the standard mechanism
+final variable OS_VERSION_PARAMS ?= dict(
+    "distribution", RPM_BASE_FLAVOUR_DISTRIBUTION,
+    "family", RPM_BASE_FLAVOUR_DISTRIBUTION,
+    "major", RPM_BASE_FLAVOUR_NAME,
+    "majorversion", RPM_BASE_FLAVOUR,
+    "minor", "x",
+    "flavour", "x",
+    "version", RPM_BASE_FLAVOUR_NAME + 'x',
+    "arch", PKG_ARCH_DEFAULT,
+);
 
 # Minimum list of packages
 include 'rpms/base';
