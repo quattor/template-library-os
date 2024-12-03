@@ -16,24 +16,14 @@ desc = list of site-specific additional packages
 values = list of strings
 default = empty list
 required = no
-} 
+}
 final variable SITE_ADDITIONAL_PACKAGES ?= undef;
 
-# Default if not properly defined elsewhere, using the standard mechanism
-final variable OS_VERSION_PARAMS ?= dict(
-    "distribution", "el",
-    "family", "el",
-    "major", "el9",
-    "majorversion", "9",
-    "minor", "x",
-    "flavour", "x",
-    "version", "el9x",
-    "arch", "x86_64",
-);
 
 final variable RPM_BASE_FLAVOUR = '9';
+final variable RPM_BASE_FLAVOUR_DISTRIBUTION = 'el';
 final variable RPM_BASE_FLAVOUR_VERSIONID = 9;
-final variable RPM_BASE_FLAVOUR_NAME = format('el%s', RPM_BASE_FLAVOUR_VERSIONID);
+final variable RPM_BASE_FLAVOUR_NAME = RPM_BASE_FLAVOUR_DISTRIBUTION + RPM_BASE_FLAVOUR_VERSIONID;
 
 
 @{
@@ -189,6 +179,18 @@ include 'os/kernel_version_arch';
 # This variable can be overriden at a site level or in a profile to
 # force a specific architecture (e.g. i386 on 64-bit machine)
 final variable PKG_ARCH_BASE ?= PKG_ARCH_DEFAULT;
+
+# Default if not properly defined elsewhere, using the standard mechanism
+final variable OS_VERSION_PARAMS ?= dict(
+    "distribution", RPM_BASE_FLAVOUR_DISTRIBUTION,
+    "family", RPM_BASE_FLAVOUR_DISTRIBUTION,
+    "major", RPM_BASE_FLAVOUR_NAME,
+    "majorversion", RPM_BASE_FLAVOUR,
+    "minor", "x",
+    "flavour", "x",
+    "version", RPM_BASE_FLAVOUR_NAME + 'x',
+    "arch", PKG_ARCH_DEFAULT,
+);
 
 # Default should be appropriate: ncm-network initscripts backend unsupported on EL9
 final variable OS_NETWORK_USE_INITSCRIPTS ?= false;
