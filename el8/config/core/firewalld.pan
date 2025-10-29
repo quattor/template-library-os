@@ -1,5 +1,7 @@
 unique template config/core/firewalld;
 
+include 'components/systemd/config';
+
 # Add firewalld RPM
 '/software/packages' = {
     pkg_repl('firewalld');

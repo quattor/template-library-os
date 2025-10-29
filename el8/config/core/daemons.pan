@@ -5,6 +5,8 @@
 
 unique template config/core/daemons;
 
+include 'components/systemd/config';
+
 variable OS_CORE_POSTFIX ?= false;
 
 variable OS_WANTED_DEFAULT_DAEMONS ?= {
@@ -48,12 +50,12 @@ variable OS_UNWANTED_DEFAULT_DAEMONS ?= {
     SELF;
 };
 
-'/software/components/systemd/unit/' = {
+'/software/components/systemd/unit' = {
     foreach(k; v; OS_WANTED_DEFAULT_DAEMONS) {
         SELF[v]['state'] = 'enabled';
-	SELF[v]['startstop'] = true;
+        SELF[v]['startstop'] = true;
     };
-    foreach(k;v;OS_UNWANTED_DEFAULT_DAEMONS) {
+    foreach(k; v; OS_UNWANTED_DEFAULT_DAEMONS) {
         SELF[v]['state'] = 'disabled';
         SELF[v]['startstop'] = true;
     };

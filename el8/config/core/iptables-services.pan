@@ -1,5 +1,7 @@
 unique template config/core/iptables-services;
 
+include 'components/systemd/config';
+
 # Install package providing iptables and ip6tables services
 '/software/packages' = {
     pkg_repl('iptables-services');
